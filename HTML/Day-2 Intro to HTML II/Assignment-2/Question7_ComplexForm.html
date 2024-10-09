@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Complex Form Layout</title>
+</head>
+<body>
+    <h1>Q7:Complex Form Layout with Nested Tables and Lists</h1>
+    <form action="">
+        <table border="1" cellspacing ="0" >
+          <tr>
+        <td>
+            <table border="1" cellspacing ="0">
+                <tr>
+                    <td><label for="firstname">First Name Last Name</label><input type="text" name="Username" id="firstname"> </td>
+                    <td>
+                        <label for="choose">Choose Country</label><select name="country" id="choose">
+                    <option value="select">--select country--</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option> </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="firstname">First Name Last Name</label><input type="text" name="Username" id="firstname"> </td>
+                       <td>
+                        <label for="choose">Choose Country</label><select name="country" id="choose">Choose Country
+                    <option value="select">--select country--</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option> 
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="firstname">First Name Last Name</label><input type="text" name="Username" id="firstname"> </td>
+                    <td><label for="choose">Choose Country</label><select name="country" id="choose">Choose Country
+                    <option value="select">--select country--</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option> </select>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+        <ul>
+            <li>JOB</li>
+            <li>Business</li>
+            <li>Freelancing</li>
+        </ul>
+    </td>
+          </tr>  
+          <tr>
+            <th> Comments: <textarea name="Comments" id="comments"></textarea></th>
+            <th> <input type="submit" name="submit" id="submit">
+            <input type="reset" name="reset" id="reset"></th>
+          </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
