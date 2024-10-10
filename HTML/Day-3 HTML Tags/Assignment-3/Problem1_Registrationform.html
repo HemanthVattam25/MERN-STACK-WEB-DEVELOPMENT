@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Problem1: Comprehensive Registration Form</h1>
+
+    <form action="">
+        <label for="fullname">Enter Full Name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter Full Name" required>
+        <br>
+        <label for="email">Enter your Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your mail id" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" maxlength="20" placeholder="Type your password here" required>
+        <br>
+        <label for="confirm-password">Re-enter the Password</label>
+        <input type="confirm-password" name="confirm-password" id="confirm-password" maxlength="20" placeholder="Repeat your password" required>
+        <br>
+        <label for="birthdate">Choose your DOB</label>
+        <input type="date" name="birthdate" id="birthdate" min="2006-10-10" required>
+        <br>
+        <label for="gender">Select your Gender</label>
+        <select name="gender" id="gender">
+            <option value="Select">Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+        <br>
+        <label for="plan">Choose your subscription plan</label>
+        <input type="radio" name="plan" id="Free" required> Free
+        <input type="radio" name="plan" id="Basic"> Basic
+        <input type="radio" name="plan" id="Premium"> Premium
+        <br>
+        <label for="hobbies">Select Hobbies</label>
+        <input type="checkbox" name="hobbies" id="hobbies"> Reading
+        <input type="checkbox" name="hobbies" id="hobbies"> Traveling
+        <input type="checkbox" name="hobbies" id="hobbies"> Coding
+        <input type="checkbox" name="hobbies" id="hobbies"> Sports
+        <br>
+        <label for="profile-picture">Upload your Profile picture</label>
+        <input type="file" name="profile-picture" id="profile-picture" accept=".jpg, .png">
+        <br>
+        <button>Submit</button>
+        <br>
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
