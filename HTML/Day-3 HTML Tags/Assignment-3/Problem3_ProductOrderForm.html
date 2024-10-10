@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Order Form</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+  <h1>Problem 3: Product Order Form with Advanced Attributes</h1> 
+
+  <form>
+<div>
+    <!-- Username -->
+    <label for="username"><b>User Name</b></label>
+    <input type="text" name="username" id="username">
+    <br>
+    <!-- Email -->
+    <label for="email"><b>User Email</b> </label>
+    <input type="email" name="email" id="email" required>
+    <br>
+    <!-- Product Category -->
+    <label for="product-category"><b>Choose Product Category</b></label>
+    <select name="category" id="category">
+        <option value="select">--select--</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Books">Books</option>
+        <option value="Clothing">Clothing</option>
+    </select>
+    <br>
+    <!--Product Dropdown (static)-->
+    <label for="product"><b>Select Product:</b></label>
+    <select name="product" id="product" required>
+    <optgroup label="Electronics">
+        <option value="Laptop">Laptop</option>
+        <option value="Smartphone">Smartphone</option>
+        <option value="Tablet">Tablet</option> 
+    </optgroup>
+</select>
+    <br>
+    <!-- Quantity -->
+    <label for="quantity"><b>Choose Quantity</b></label>
+    <input type="number" name="quantity" id="quantity" min="1" max="10">
+    <br>
+    <!-- Delivery Timing -->
+    <label for="delivery-date"><b>Preferred Delivery date and time</b></label>
+    <input type="datetime-local" name="delivery-date" id="delivery-date" min="2024-10-10T18:49">
+    <br>
+    <!-- Additional Info -->
+    <label for="additional-notes"><b>Additional information:</b></label>
+    <br>
+    <textarea name="additional-notes" id="additional-notes" placeholder="Add if any additional notes"></textarea>
+    <br>
+    <!-- Payment Options -->
+    <label for="payment-options"><b>Choose payment option:</b></label>
+    <br>
+    <input type="checkbox" name="payment-options" id="payment-options">
+    <label>Credit Card</label>
+    <br>
+    <input type="checkbox" name="payment-options" id="payment-options">
+    <label>PayPal</label>
+    <br>
+    <input type="checkbox" name="payment-options" id="payment-options">
+    <label>Bank Transfer</label>
+    <br>
+    <!-- Submit  -->
+    <button>Submit</button>
+</div>
+   
+
+  </form> 
+ 
+</body>
+</html>

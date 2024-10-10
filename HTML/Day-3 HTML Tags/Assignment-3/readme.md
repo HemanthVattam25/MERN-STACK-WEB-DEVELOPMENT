@@ -40,3 +40,26 @@
 - The radio buttons should be aligned vertically.
 - The internal link should jump to a section with an ID "feedback-policy".
 - Use bold, italics,
+
+# Problem 3: Product Order Form with Advanced Attributes
+# Create an advanced product order form with the following elements:
+1. Text input for the user's name.
+2. Email input for the user's email address.
+3. Dropdown menu to select a product category (options: Electronics, Books, Clothing).
+#Note(Pending):4. A dynamically updating product dropdown based on the selected category (e.g., if
+"Electronics" is selected, the dropdown shows "Laptop, Smartphone, Tablet").
+5. Number input for the quantity of the product.
+6. Date and time inputs for the preferred delivery date and time.
+7. Textarea for additional notes.
+8. Checkboxes for payment options (Credit Card, PayPal, Bank Transfer).
+9. A submit button.
+# Requirements:
+- All input fields should have proper labels.
+- The email field should be required.
+- The quantity input should have a minimum value of 1 and a maximum value of 10, with a
+step of 1.
+- The date input should not allow past dates.
+- The product dropdown should update based on the selected category.
+- The checkboxes should allow multiple selections.
+- Use a combination of block and inline elements for the layout.
+- Include a meta tag to specify the character set as UTF-8
