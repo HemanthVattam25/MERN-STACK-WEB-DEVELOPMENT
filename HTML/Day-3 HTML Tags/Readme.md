@@ -21,10 +21,12 @@
   - submit
   - reset
 
-# select tag (dropdown - single selection)
-<option>
+# select tag 
+- (dropdown - single selection)
+ option
 
-# textarea (an textfield to entire multiple lines of text)
+# textarea 
+- an textfield to entire multiple lines of text
 
 # - Attributes
    -input
@@ -41,7 +43,7 @@
    - disabled
    - autocomplete
 
-   label 
+    # label 
    - (gives information to the browser about the input fields to maintain cleaner code)
 
    form tag attributes (Link your client form to the server (backend))
