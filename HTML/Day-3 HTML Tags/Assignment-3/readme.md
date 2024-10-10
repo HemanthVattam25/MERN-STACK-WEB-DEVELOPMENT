@@ -1,5 +1,5 @@
 ## Problem 1: Comprehensive Registration Form
-Create a comprehensive registration form that includes the following elements:
+# Create a comprehensive registration form that includes the following elements:
 1. Text input for the user's full name.
 2. Email input for the user's email address.
 3. Password input for the user's password.
@@ -10,7 +10,7 @@ Create a comprehensive registration form that includes the following elements:
 8. Checkboxes for selecting hobbies (e.g., Reading, Traveling, Coding, Sports).
 9. A file input to upload a profile picture.
 10. A submit button.
-Requirements:
+# Requirements:
 - All input fields should have proper labels.
 - The email, password, confirm password, and birthdate fields should be required.
 - Password and confirm password fields should have a maximum length of 20 characters.
