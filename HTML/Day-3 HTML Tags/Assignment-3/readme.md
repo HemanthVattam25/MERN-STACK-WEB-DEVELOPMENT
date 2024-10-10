@@ -46,7 +46,7 @@
 1. Text input for the user's name.
 2. Email input for the user's email address.
 3. Dropdown menu to select a product category (options: Electronics, Books, Clothing).
-#Note(Pending):4. A dynamically updating product dropdown based on the selected category (e.g., if
+# Note(Pending):4. A dynamically updating product dropdown based on the selected category (e.g., if
 "Electronics" is selected, the dropdown shows "Laptop, Smartphone, Tablet").
 5. Number input for the quantity of the product.
 6. Date and time inputs for the preferred delivery date and time.
