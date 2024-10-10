@@ -1,7 +1,7 @@
 ## Form: Collect User Data
 
-#tags
-<input> (several types)
+# Tags
+# <input> (several types)
 - text
 - email
 - password
@@ -15,18 +15,18 @@
 - range
 - submit
 
-<button> (button)
+# <button> (button)
 -type
   - button
   - submit
   - reset
 
-<select> (dropdown - single selection)
+# <select> (dropdown - single selection)
 <option>
 
-<textarea> (an textfield to entire multiple lines of text)
+# <textarea> (an textfield to entire multiple lines of text)
 
--Attributes
+# - Attributes
    input
    - type
    - name
@@ -41,11 +41,12 @@
    - disabled
    - autocomplete
 
-   label (gives information to the browser about the input fields to maintain cleaner code)
+   label 
+   - (gives information to the browser about the input fields to maintain cleaner code)
 
    form tag attributes (Link your client form to the server (backend))
 
-   -method (HTTP method) (CRUD Operations)
+   - method (HTTP method) (CRUD Operations)
    - POST (create)
    - GET (Read)
    - PUT/PATCH (Update)
