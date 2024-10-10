@@ -1,7 +1,7 @@
 ## Form: Collect User Data
 
 # Tags
-# <input> (several types)
+# input tag (several types)
 - text
 - email
 - password
@@ -15,19 +15,19 @@
 - range
 - submit
 
-# <button> (button)
+# (button)
 -type
   - button
   - submit
   - reset
 
-# <select> (dropdown - single selection)
+# select tag (dropdown - single selection)
 <option>
 
-# <textarea> (an textfield to entire multiple lines of text)
+# textarea (an textfield to entire multiple lines of text)
 
 # - Attributes
-   input
+   -input
    - type
    - name
    - id
