@@ -10,6 +10,7 @@
 8. Checkboxes for selecting hobbies (e.g., Reading, Traveling, Coding, Sports).
 9. A file input to upload a profile picture.
 10. A submit button.
+
 # Requirements:
 - All input fields should have proper labels.
 - The email, password, confirm password, and birthdate fields should be required.
@@ -19,3 +20,23 @@
 - The radio buttons should be aligned horizontally.
 - The checkboxes should allow multiple selections.
 - The file input should accept only image files (jpg, png) and should be required.
+
+# Problem 2: Detailed Feedback Form with Inline Elements
+# Design a detailed feedback form with the following components:
+1. Text input for the user's name.
+2. Email input for the user's email address.
+3. Textarea for detailed comments.
+4. A range input to rate the service (from 0 to 10).
+5. Radio buttons to select the feedback type (options: Compliment, Complaint, Suggestion).
+6. A checkbox to agree to the feedback policy.
+7. An internal link to the feedback policy section at the bottom of the form.
+8. A submit button.
+
+ # Requirements:
+- The form should have proper labels for each input field.
+- The email field and feedback policy checkbox should be required.
+-  The textarea should have a placeholder that says "Enter your feedback here".
+- The range input should display the selected value.
+- The radio buttons should be aligned vertically.
+- The internal link should jump to a section with an ID "feedback-policy".
+- Use bold, italics,

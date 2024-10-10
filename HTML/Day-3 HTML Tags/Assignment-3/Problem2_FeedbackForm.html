@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Problem2: Detailed Feedback Form with Inline Elements</h1>
+     <div id="feedback-policy">
+        <h2>Feedback-policy</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores officia eveniet voluptatibus ipsa. Illo, minima assumenda expedita natus quaerat quis, debitis inventore quia amet magni pariatur atque? Tempore, omnis.
+        Commodi obcaecati dolorem autem delectus ipsa deserunt quae? Provident numquam repellendus tenetur atque veritatis mollitia sapiente eveniet nihil aliquid, modi harum animi maxime consequatur iusto recusandae temporibus minima architecto vitae!
+        Eos, explicabo delectus eligendi similique nemo neque tempora eius commodi repellat nulla incidunt, repudiandae a ducimus porro quibusdam nihil est dolorum ipsum qui iste sunt tempore. In ipsum magni autem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium sunt maiores necessitatibus minima veniam ipsam optio, fugit ad voluptate, aliquid vero, accusamus nisi voluptatem quidem recusandae provident nobis quos nostrum.
+        Dolorem, mollitia incidunt obcaecati minus ex provident. Rerum quaerat sunt architecto facere laborum voluptatibus necessitatibus commodi beatae dicta ratione repudiandae odit odio voluptas amet rem cupiditate magni, cumque quae dignissimos?
+        Laudantium magni error autem minima cum aspernatur voluptates quos beatae quam voluptate. Eum, illum ratione, mollitia iure vel eos omnis error fuga cupiditate similique possimus assumenda eius, quis voluptatem numquam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi corrupti eligendi magnam neque eaque totam recusandae dignissimos ab sit? Vero cupiditate a doloremque officia quaerat. Veritatis, nesciunt! Praesentium, corporis commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque harum fuga veritatis voluptas ea dignissimos minus mollitia! Delectus laboriosam doloribus similique explicabo minima adipisci deserunt, numquam saepe vero cupiditate!</p>
+    </div>
+    <form>
+    <label for="username"><b>Username</b></label>
+    <input type="text" name="username" id="username">
+    <br>
+    <label for="email"><b>Email</b></label>
+    <input type="email" name="email" id="email" required>
+    <br>
+    <label for="comments"><b>Comments:</b></label>
+    <br>
+    <textarea name="comments" id="comments" rows="5" cols="30" placeholder="Enter your feedback here"></textarea>
+    <br>
+    <label for="rating"><b>Rate the Service</b></label>
+    <br>
+    <input type="range" name="rating" id="rating" step="1" min="0" max="10" oninput="output.value = rating.value" >
+    <output id="output" for="rating"></output>
+    <br>
+    <label for="feedback-type"><b>Select the feedback type:</b></label>
+    <br>
+    <input type="radio" name="feedback-type" id="feedback-type">
+    <label for="feedback-type"><i>Compliment</i></label>
+    <br>
+    <input type="radio" name="feedback-type" id="feedback-type">
+    <label for="feedback-type"><i>Complaint</i></label>
+    <br>
+    <input type="radio" name="feedback-type" id="feedback-type">
+    <label for="feedback-type"><i>Suggestion</i></label>
+    <br>
+    <br>
+    <input type="checkbox" name="agree" id="agree" required>
+    <label for="agree"><u>Agree to the feedback policy</u></label>
+    <br>
+   <br>
+    <a href="#feedback-policy">feedback policy</a>
+    <br>
+    <br>
+    <button>Submit</button>
+    </form>
+    
+</body>
+</html>
