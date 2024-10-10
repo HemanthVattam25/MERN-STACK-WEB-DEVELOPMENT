@@ -1,0 +1,26 @@
+/* CSS element selectors */
+main {
+  background-color: bisque;
+  border-width: 5px;
+}
+
+/* CSS class selectors */
+
+.external {
+  color: rgb(5, 73, 33);
+  font-style: italic;
+  text-align: center;
+}
+/* CSS id selectors */
+
+#external-text {
+  text-decoration: double;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(228, 120, 70);
+}
+
+/* CSS universal selectors */
+
+* {
+  border: 1px solid blueviolet;
+}
