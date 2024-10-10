@@ -11,11 +11,11 @@ Create a comprehensive registration form that includes the following elements:
 9. A file input to upload a profile picture.
 10. A submit button.
 Requirements:
-● All input fields should have proper labels.
-● The email, password, confirm password, and birthdate fields should be required.
-● Password and confirm password fields should have a maximum length of 20 characters.
-● The date input should ensure the user is at least 18 years old.
-● The dropdown should have a default option that says "Select your gender".
-● The radio buttons should be aligned horizontally.
-● The checkboxes should allow multiple selections.
-● The file input should accept only image files (jpg, png) and should be required.
+- All input fields should have proper labels.
+- The email, password, confirm password, and birthdate fields should be required.
+- Password and confirm password fields should have a maximum length of 20 characters.
+- The date input should ensure the user is at least 18 years old.
+- The dropdown should have a default option that says "Select your gender".
+- The radio buttons should be aligned horizontally.
+- The checkboxes should allow multiple selections.
+- The file input should accept only image files (jpg, png) and should be required.
