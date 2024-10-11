@@ -1,0 +1,17 @@
+.priority {
+  background-color: chocolate;
+}
+
+#new-para {
+  background-color: olivedrab;
+  border-radius: 10px;
+}
+
+.important {
+  background-color: yellow;
+  border: 3px solid black;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

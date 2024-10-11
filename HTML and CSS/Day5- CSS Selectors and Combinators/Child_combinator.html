@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Child combinator</title>
+    <style>
+      div > p {
+        color: brown;
+        background-color: beige;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>This is p1 inside div. This should be styled for child</p>
+      <p>This is p2 inside div. This should be styled for child</p>
+      <span> <p>This is p3 inside span which is inside div</p></span>
+    </div>
+    <p>This is p4 outside div</p>
+  </body>
+</html>

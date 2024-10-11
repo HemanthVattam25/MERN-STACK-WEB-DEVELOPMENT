@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./Selectors.css" />
+    <style>
+        /* Universal Selector */
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p{
+          background-color: blueviolet;  
+        }
+
+      .priority {
+        background-color: cadetblue;
+      }
+      .Paragraph {
+        background-color: aqua;
+        border: 1px solid black;
+      }
+
+      #new-para {
+        background-color: chocolate;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ELement Tag -->
+    <h1>Implementing Selectors and Priority of Selectors for styling</h1>
+    <!-- Class -->
+    <div class="Paragraph">
+      <p>
+        This is the Paragraph written in p tag under div tag with the class
+        paragraph.
+      </p>
+      <!-- id -->
+      <p id="new-para">
+        This is the new paragraph under the same div tag with the same class
+        name "paragraph" but the unique id as "new-para"
+      </p>
+    </div>
+
+    <p> This paragraph is used to check internal styling and external styling
+        effect after inline styling.
+  </p>
+
+      <p class="priority">
+      The priority of styling for selectors is as given:
+      <li>Inline Styling > (Internal Styling ~ External Styling)</li>
+      <p class="important">NOTE: The styling priority between internal and external CSS happens as which file is saved before run. If we save HTML file and run, internal styling happens, If we save css file and run, External CSS styling happens</p>
+      <li>
+        Inline styling > id (#) > class(.) > element (Tag name) > universal (*)
+      </li>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pseudo Classes</title>
+    <style>
+      p::first-letter {
+        font-style: oblique;
+        color: brown;
+      }
+      p::first-line {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      p::before {
+        content: "HI ";
+      }
+      p::after {
+        content: " end";
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is the Paragraph</p>
+    <p>This is the Paragraph</p>
+    <p>This is the Paragraph</p>
+    <button>Submit</button>
+  </body>
+</html>

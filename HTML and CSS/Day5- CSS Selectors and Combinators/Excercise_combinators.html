@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div ~ p {
+        background-color: blue;
+      }
+      .container > p {
+        background-color: gray;
+      }
+      div p {
+        background-color: chocolate;
+      }
+      p {
+        background-color: aqua;
+      }
+
+      #new + p {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- p1 gray -->
+      <p>This is p1 inside div</p>
+      <div>
+        <!-- p2 chocolate -->
+        <p>This is p2 inside div</p>
+      </div>
+      <!--p3 blue -> aqua-> gray -->
+      <p>This is p3</p>
+      <!-- p4 aqua but inside div so chocolate-->
+      <span> <p>This is p4 inside span which is inside div</p></span>
+    </div>
+    <!-- p5 blue -->
+    <p>This is p5 outside div</p>
+    <div id="new">
+      <!--  p6 aqua but inside div so chocolate-->
+      <span><p>This is p6 outside div</p></span>
+      <!-- p7 aqua but inside div so chocolate-->
+      <p>This is p7 outside div</p>
+    </div>
+    <!-- p8 is bluevoilet -->
+    <p>This is p8</p>
+  </body>
+</html>
