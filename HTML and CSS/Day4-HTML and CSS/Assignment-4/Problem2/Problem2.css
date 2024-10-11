@@ -1,0 +1,44 @@
+#name {
+  text-align: center;
+  font-size: xx-large;
+}
+
+#Resume {
+  font-family: "Times New Roman", Times, serif;
+  padding: 0px;
+  margin: 20px 100px;
+  padding: 0px;
+}
+
+.heading {
+  color: cadetblue;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.line {
+  border: 1px solid cadetblue;
+}
+
+.personal {
+  text-align: right;
+}
+
+p {
+  color: rgb(80, 73, 73);
+  margin-top: 5px;
+}
+
+li {
+  margin-left: 10px;
+  margin-bottom: 5px;
+
+  color: rgb(80, 73, 73);
+}
+
+h3 {
+  color: rgb(42, 36, 36);
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
