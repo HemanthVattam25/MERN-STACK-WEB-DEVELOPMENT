@@ -1,0 +1,34 @@
+.row {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+
+.movie {
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0px 1px 0;
+  padding: 3px;
+  margin: 0px;
+}
+
+.movie-name {
+  text-align: center;
+}
+
+img {
+  height: 300px;
+  margin: 10px;
+  padding: 0px;
+  width: fit-content;
+}
+
+.rating {
+  text-align: center;
+}
+
+.book {
+  background-color: rgb(12, 198, 198);
+  border-radius: 1px;
+  border: 0px;
+}
