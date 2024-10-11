@@ -1,0 +1,25 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.col-content {
+  width: 33%;
+  align-items: center;
+  padding: 20px;
+}
+
+p {
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  color: #635b5b;
+}
+
+a {
+  color: black;
+}
+
+#image {
+  width: 100%;
+  height: 300px;
+}
