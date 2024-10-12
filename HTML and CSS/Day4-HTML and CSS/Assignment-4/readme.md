@@ -11,6 +11,6 @@
     link:
     ![alt text](resume.png)
 3.  Create the below layout using css and box-model
-    ![alt text](shopping.png)
+    ![alt text](Shopping.png)
     For reference you can visit this website:- Movies
     Image Links:- images.txt
