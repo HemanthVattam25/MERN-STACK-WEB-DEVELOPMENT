@@ -9,8 +9,8 @@
     can fill in your own data, whichever you want to do. No need to match colors given, but try to match
     font-size.
     link:
-    ![alt text](image-1.png)
+    ![alt text](resume.png)
 3.  Create the below layout using css and box-model
-    ![alt text](image-1.png)
+    ![alt text](shopping.png)
     For reference you can visit this website:- Movies
     Image Links:- images.txt
