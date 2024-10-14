@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator Design</title>
+    <style>
+      body,
+      html {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
+      }
+
+      button:hover {
+        background-color: gray;
+      }
+      .calculator {
+        border: 1px solid black;
+        width: 280px;
+        height: 350px;
+        box-shadow: 1px 1px 1px 1px lightgray;
+        border: 1px solid lightgray;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .calculator div {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+      }
+
+      div input {
+        padding: 10px;
+        margin: 20px;
+        margin-left: 45px;
+        width: 170px;
+        height: 25px;
+        box-shadow: 1px 1px 1px 1px lightgray;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        background-color: white;
+      }
+
+      div {
+        margin-top: 20px;
+      }
+
+      div > button {
+        font-family: "Times New Roman", Times, serif;
+        margin: 4px;
+        width: 40px;
+        box-shadow: 1px 1px 1px 1px lightgray;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        font-weight: bolder;
+        cursor: pointer;
+        font-size: larger;
+      }
+      div .operator {
+        background-color: black;
+        color: white;
+      }
+
+      #Reset {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" name="result" id="result" />
+      <div>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">+</button>
+      </div>
+      <div>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">-</button>
+      </div>
+      <div>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">x</button>
+      </div>
+      <div>
+        <button id="Reset">C</button>
+        <button>0</button>
+        <button>=</button>
+        <button class="operator">/</button>
+      </div>
+    </div>
+  </body>
+</html>
