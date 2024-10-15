@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Study Lab</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        margin: auto;
+        /* width: 90%; */
+      }
+      #navbar {
+        display: flex;
+        /* border: 1px solid black; */
+        height: 40px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 0px 2px 5px lightgray;
+      }
+      #logo {
+        background-color: blueviolet;
+        font-weight: bolder;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 40px;
+        color: whitesmoke;
+        text-align: center;
+        padding: 17px;
+        margin-left: 30px;
+      }
+      .Tabs {
+        /* border: 1px solid red; */
+        font-size: 25px;
+        font-weight: bold;
+        display: flex;
+        width: 58%;
+        gap: 60px;
+      }
+      .Tabs > section:hover {
+        cursor: pointer;
+      }
+      div section:nth-child(1) {
+        color: rgb(23, 136, 250);
+      }
+
+      .container {
+        display: flex;
+        /* border: 1px solid green; */
+        margin: auto;
+        width: 100%;
+        box-shadow: 0px 2px 5px lightgray;
+      }
+
+      .content {
+        margin-top: 100px;
+        width: 40%;
+        /* border: 4px solid yellow; */
+        padding: 50px;
+        margin-top: 50px;
+      }
+
+      .content h3 {
+        color: dodgerblue;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+
+      .content h1 {
+        font-size: 50px;
+      }
+      .content h2 {
+        font-size: 30px;
+        font-weight: lighter;
+      }
+      .cards {
+        display: flex;
+        /* border: 4px solid palevioletred; */
+        width: 60%;
+        margin: 50px auto;
+        flex-wrap: wrap;
+
+        align-items: center;
+        padding-left: 50px;
+      }
+
+      .cards div {
+        width: 30%;
+        /* border: 5px solid aqua; */
+        padding: 20px;
+        box-shadow: 0px 2px 5px lightgray;
+        padding-left: 10px;
+        margin: 20px;
+        margin-left: 0px;
+      }
+
+      p {
+        font-size: 25px;
+        color: rgb(131, 124, 124);
+        /* border: 5px solid orange; */
+        padding: 10px;
+        line-height: 40px;
+      }
+      #lower-part {
+        display: flex;
+        gap: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="logo">StudyLab</div>
+      <div class="Tabs">
+        <section>Home</section>
+        <section>About</section>
+        <section>Course</section>
+        <section>Instructor</section>
+        <section>Blog</section>
+        <section>Contact</section>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <h3>WELCOME TO STUDYLAB</h3>
+        <h1>We Are StudyLab An Online Learning Center</h1>
+        <p>
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia. It is a paradisematic country, in which
+          roasted parts of sentences fly into your mouth.
+        </p>
+        <p>
+          Far far away, behind the word mountains far from the countries Vokalia
+          and Consonantia, there live the blind texts. Separated they live in
+          Bookmarksgrove right at the coast of the Semantics, a large language
+          ocean.
+        </p>
+
+        <div id="lower-part">
+          <img src="./Media/p1.png" alt="Watch Video" />
+          <h2>
+            Learn anything from StudyLab,<br />
+            Watch Video
+          </h2>
+        </div>
+      </div>
+      <div class="cards">
+        <div>
+          <img src="./Media/image1.png" alt="Top Quality Content" />
+          <h2>Top Quality Content</h2>
+          <p>A small river named Duden flows by their place and supplies</p>
+        </div>
+        <div>
+          <img src="./Media/image2.png" alt="Highly Skilled Instructor" />
+          <h2>Highly Skilled Instructor</h2>
+          <p>A small river named Duden flows by their place and supplies</p>
+        </div>
+        <div>
+          <img src="./Media/image3.png" alt="World Class & Quiz" />
+          <h2>World Class & Quiz</h2>
+          <p>A small river named Duden flows by their place and supplies</p>
+        </div>
+        <div>
+          <img src="./Media/image4.png" alt="Get Certified" />
+          <h2>Get Certified</h2>
+          <p>A small river named Duden flows by their place and supplies</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
