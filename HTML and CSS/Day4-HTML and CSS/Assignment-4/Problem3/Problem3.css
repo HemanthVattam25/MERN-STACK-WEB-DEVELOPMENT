@@ -1,3 +1,8 @@
+#movie-page {
+  margin: auto;
+  justify-content: center;
+  margin-left: 200px;
+}
 .row {
   display: flex;
   gap: 20px;
