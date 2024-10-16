@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>News</title>
+    <style>
+      body {
+        margin: 0px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .container {
+        background-color: aliceblue;
+        /* border: 3px solid brown; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 20px; */
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        margin: 0px;
+        padding: 30px;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: center;
+        /* border: 3px solid brown; */
+        gap: 50px;
+        margin-bottom: 30px;
+      }
+
+      .cards div {
+        /* border: 3px solid yellow; */
+        margin: 10px;
+        width: 15%;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 1px 2px 0px 2px lightgray;
+      }
+
+      .container img {
+        /* border: 3px solid brown; */
+        width: 100%;
+        height: 100px;
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        color: dodgerblue;
+      }
+
+      p {
+        font-size: 20px;
+        color: rgb(115, 107, 107);
+      }
+
+      button {
+        font-size: large;
+        color: red;
+        border: 1px solid red;
+        padding: 10px;
+        background-color: transparent;
+        word-spacing: 5px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .footer {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+      }
+      .footer img {
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        padding: 20px 100px 20px 100px;
+        width: 250px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Masai in the News</h1>
+      <div class="cards">
+        <div>
+          <img
+            src="https://th.bing.com/th/id/OIP.GYA7WfcLX2gHQai5OVgjFwHaBz?w=344&h=85&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            alt="The Economic Times"
+          />
+          <h3>21 Dec 2021</h3>
+          <h2>
+            Edtech startup Masai School acquired data analytics firm Prepleaf
+            for $1 million.
+          </h2>
+          <p>
+            With their latest acquisition, Masai moves one step closer to
+            becoming...
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="https://th.bing.com/th/id/OIP.3VNvmiyiB_Q4B-FpGg7uwAHaFO?w=265&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            alt="Money Control"
+          />
+          <h3>26 Oct 2021</h3>
+          <h2>
+            Kunal Shah, Vijay Shekhar Sharma, Amrish Rau among 21 angel
+            investors in Masai School
+          </h2>
+          <p>
+            Masai School is aiming to expands to 20 smaller cities by March 2022
+            and...
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="VCCIRCLE"
+          />
+          <h3>18 Aug 2020</h3>
+          <h2>
+            Unitus Ventures leads pre-Series A funding for coding-focussed Masai
+            School
+          </h2>
+          <p>
+            Software coding platform Masai School has raised $2.5 million (Rs
+            18.6 crore) i..
+          </p>
+        </div>
+      </div>
+
+      <button>SEE MORE ></button>
+    </div>
+
+    <h1>Our Investors Who Believe In Us</h1>
+
+    <div class="footer">
+      <img
+        src="https://th.bing.com/th/id/OIP.AwBO_L8k96-Au0VexKVK-QHaC6?w=285&h=137&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="Unitus Ventures"
+      />
+
+      <img
+        src="https://th.bing.com/th/id/OIP.croht5X__Y9O3ZHRuOOp-gAAAA?w=274&h=152&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="Omidyar Network India"
+      />
+
+      <img
+        src="https://th.bing.com/th/id/OIP.jlzULSMGUhZ7Teahn_pXigHaEa?w=279&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="India Quotient"
+      />
+    </div>
+  </body>
+</html>
