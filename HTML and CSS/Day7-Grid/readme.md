@@ -44,4 +44,23 @@ When specified to 3 cols, 2 rows and each one is given some grid-area name/id. T
 "a b c"
 "d e f"
 
-8. grid-column-start(col-number)
+8. grid-column-start:3
+   It gives the start position of 3 in column to a specific element
+
+9. grid-column-end: 5
+   It gives the end position of 5 in column to a specific element
+
+- grid-column: 2/6
+  It gives start and end positions at same time
+
+10. span:
+    It gives the length of the elements along column or row
+
+- grid-column: 3 / span 2:
+  It starts at 3 and goes with length 2
+
+11. order:
+    By default order is 0. if we increase, it will move to the right
+
+12. grid-template: 50% 50% /200px
+    It is the combination of rows and columns
