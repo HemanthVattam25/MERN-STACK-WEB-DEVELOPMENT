@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer Template</title>
+  </head>
+  <style>
+    /* Tablet */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .info {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .footer {
+        background-color: rgb(47, 44, 44);
+        display: flex;
+        justify-content: center;
+      }
+      .footer .country {
+        display: none;
+      }
+    }
+
+    /* Mobile */
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+      .container {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .info {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .footer {
+        background-color: rgb(47, 44, 44);
+        display: flex;
+        justify-content: center;
+      }
+      .footer .country {
+        display: none;
+      }
+    }
+
+    /* All Other Screens */
+    @media screen and (min-width: 1024px) {
+      .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer {
+        background-color: rgb(47, 44, 44);
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    #logo {
+      background-color: darkblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    #Menu {
+      background-color: #5762ef;
+      color: rgb(225, 222, 222);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+    }
+    li {
+      margin: 10px 0px 10px 0px;
+    }
+
+    .country {
+      color: white;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .country img {
+      width: 20px;
+      height: 20px;
+    }
+    .terms {
+      color: darkgray;
+      display: flex;
+      gap: 20px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+    }
+    a {
+      color: darkgray;
+    }
+  </style>
+
+  <body>
+    <main class="container">
+      <section class="info">
+        <div id="logo">
+          <img src="./media/logo.png" alt="logo" />
+        </div>
+        <div id="Menu">
+          <div class="shop">
+            <h1>Shop</h1>
+            <ul>
+              <li>Gift cards</li>
+              <li>Etsy Registry</li>
+              <li>Sitemap</li>
+              <li>Etsy blog</li>
+              <li>Etsy United Kingdom</li>
+              <li>Etsy Germany</li>
+              <li>Etsy Canada</li>
+            </ul>
+          </div>
+
+          <div class="Sell">
+            <ul>
+              <h1>Sell</h1>
+              <li>Sell on Etsy</li>
+              <li>Teams</li>
+              <li>Forums</li>
+              <li>Affiliates & Creators</li>
+            </ul>
+          </div>
+
+          <div class="About">
+            <h1>About</h1>
+            <ul>
+              <li>Etsy, Inc.</li>
+              <li>Policies</li>
+              <li>Investors</li>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Impact</li>
+              <li>Legal imprint</li>
+            </ul>
+          </div>
+
+          <div class="shop1">
+            <h1>Shop</h1>
+            <ul>
+              <li>Gift cards</li>
+              <li>Etsy Registry</li>
+              <li>Sitemap</li>
+              <li>Etsy blog</li>
+              <li>Etsy United Kingdom</li>
+              <li>Etsy Germany</li>
+              <li>Etsy Canada</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="country">
+          <img
+            src="https://www.pngguru.in/storage/uploads/images/indian-flag-design-png-download-free_1716198611_2054791534.webp"
+            alt="India icon"
+          />
+          <p>India | English(IN) | ₹(INR)</p>
+        </div>
+
+        <div class="terms">
+          <p>© 2024 Etsy,Inc.</p>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy</a>
+          <a href="#">Interest-based-ads</a>
+          <a href="#">Local Shops</a>
+          <a href="#">Regions</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
