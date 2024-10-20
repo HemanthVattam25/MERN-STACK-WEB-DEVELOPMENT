@@ -22,4 +22,4 @@ By default, the browser renders the html elements one after the other in the vie
 4. Absolute positioning:
    - Here the new position of the element is changed and the old space will be lost and can be occupied by next elements
 5. Sticky positioning:
-   - Here the element by default will be static and when we scroll, it becomes absolute and other elements occupying the sticky element space.
+   - Here the element will be in relative until scroll and when we scroll, it becomes sticky to the position specified with its parent and other elements occupying the sticky element space.
