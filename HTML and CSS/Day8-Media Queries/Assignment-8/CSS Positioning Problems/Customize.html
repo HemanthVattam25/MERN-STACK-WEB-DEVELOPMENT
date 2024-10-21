@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customized Page</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      header {
+        background-color: teal;
+        color: white;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+      }
+      a {
+        color: gainsboro;
+      }
+
+      .main-content {
+        position: static;
+        margin-top: 80px;
+        margin-bottom: 60px;
+        background-color: antiquewhite;
+        z-index: 1;
+      }
+      .sidebar {
+        width: 200px;
+        background-color: tomato;
+        color: white;
+        font-size: 20px;
+        float: left;
+        height: 600px;
+      }
+
+      .content {
+        padding: 10px;
+        margin-left: 200px;
+        position: relative;
+      }
+
+      ul {
+        list-style: none;
+        line-height: 50px;
+      }
+
+      .main-content img {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 100px;
+      }
+
+      #block-content {
+        width: 90%;
+        position: relative;
+        top: 20px;
+        right: 10px;
+        margin: 20px;
+        font-style: italic;
+        font-size: 18px;
+      }
+      .float-container {
+        width: 100%;
+        overflow: hidden;
+      }
+      .float-container > div {
+        width: 48%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+      }
+      .float-container > div:nth-child(2) {
+        margin-right: 0px;
+      }
+
+      #one {
+        background-color: yellow;
+        height: 200px;
+      }
+
+      #two {
+        background-color: green;
+        height: 200px;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        background-color: gray;
+        width: 100%;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CUSTOMIZED PAGE</h1>
+    </header>
+
+    <div class="main-content">
+      <div class="sidebar">
+        <ul>
+          <li>Projects</li>
+          <li>Skills</li>
+          <li>Experience</li>
+          <li>Teams</li>
+          <li>Hobbies</li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <img
+          src="https://th.bing.com/th/id/OIP.t3AeRbnlAKmcn2lqzGfKuwHaE8?w=258&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+          alt="Image"
+        />
+        <div id="block-content">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga
+            eaque, architecto cumque, consequuntur saepe doloremque officia
+            autem ipsa pariatur unde eum dolorem rerum in quae magni illum
+            laboriosam cupiditate? Animi enim quas, maiores quae similique
+            optio. Commodi, alias voluptatibus delectus voluptates quidem
+            recusandae nisi. Quam laboriosam provident ipsam, eaque quos in,
+            eligendi deleniti sunt laudantium, minus veniam enim laborum!
+            Aliquam unde eaque cum, similique animi possimus quas delectus id?
+            Sit ea quia eos earum accusantium fuga officia eligendi? Aliquam
+            labore tempore nulla reiciendis eveniet repellat cum dignissimos
+            facere officiis? Labore doloremque culpa perferendis accusantium
+            consequuntur possimus amet eum qui pariatur voluptate tempore quod
+            odio dolor voluptas consectetur, maxime, iusto animi et ullam! Quod
+            amet consectetur officia sed saepe numquam. Accusamus laboriosam
+            earum itaque labore, deserunt, iste, inventore nisi doloremque magni
+            quas debitis eligendi pariatur ea! Accusamus porro molestias
+            provident explicabo aspernatur rem omnis culpa? A illum non
+            dignissimos ducimus? Dignissimos alias numquam, accusantium,
+            obcaecati magni perspiciatis reiciendis, ad accusamus odit nihil
+            consequuntur deserunt ab in facilis nulla distinctio temporibus.
+            Voluptas laborum nihil aut accusantium magnam sequi sint illo
+            doloremque. Dicta commodi molestiae, ipsa, repudiandae quae deleniti
+            reprehenderit placeat adipisci, a cumque cupiditate minus? Placeat
+            modi quod rem? Earum perspiciatis minus sapiente minima, quasi sit
+            velit dolorem nisi quae omnis! Praesentium a harum voluptatum iste.
+            Delectus quidem vitae aspernatur a? Veritatis sit voluptatum
+            mollitia debitis at autem, ut obcaecati? Delectus molestiae unde et
+            sapiente vitae optio sed sunt ut impedit! Mollitia ut unde
+            accusantium est quidem magni quas sit nobis atque voluptas modi
+            expedita recusandae, repudiandae omnis aperiam natus beatae animi
+            iusto porro commodi cumque culpa voluptates aspernatur? Omnis,
+            sapiente? Dolore cumque excepturi, voluptas sit quia recusandae
+            libero provident voluptates, ab, nemo unde omnis. Necessitatibus
+            atque corrupti quod fuga officia ipsa aperiam repellendus vitae
+            tempore recusandae, vero alias earum quo. Similique hic ratione
+            asperiores praesentium numquam iure suscipit maiores commodi, quo
+            nihil saepe, enim qui sequi, voluptas ipsum ad distinctio! Rerum
+            facere incidunt dolorem illum doloribus culpa modi distinctio
+            obcaecati! Possimus impedit ullam explicabo natus porro voluptatem
+            repellendus nobis illum culpa hic odit, voluptate, rerum adipisci
+            consequatur cupiditate maiores corrupti animi omnis. Debitis cumque
+            blanditiis libero consectetur porro. Cumque, vel. Accusantium
+            laborum ipsam doloremque facilis natus atque sunt minus nisi
+            perferendis eligendi assumenda iste dolor aperiam, hic eos aut sint
+            asperiores veritatis. Fugit dolorem nobis nisi quam delectus fuga
+            incidunt! Ipsam, quo soluta autem dicta rem sapiente, facilis iure
+            ea, sit necessitatibus placeat. Non accusantium error harum
+            similique, eos fugiat, quis rem laborum, nulla illo reiciendis at
+            laudantium iusto autem. Laborum, ad? Non iure porro vero ut nemo
+            sunt id assumenda, fugiat harum laudantium, repellendus rem fugit
+            delectus. Consectetur sint doloremque at eveniet velit. Dolorem
+            rerum incidunt adipisci velit numquam.
+          </p>
+        </div>
+        <div class="float-container">
+          <div id="one">1</div>
+          <div id="two">2</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="#">Contact</a>
+      <a href="#">Linkedin</a>
+      <a href="#">Location</a>
+      <a href="#">GitHub</a>
+      <a href="#">Terms</a>
+    </footer>
+  </body>
+</html>
