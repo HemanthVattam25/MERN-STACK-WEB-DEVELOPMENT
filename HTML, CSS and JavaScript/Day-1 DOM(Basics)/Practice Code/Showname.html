@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Name</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Enter Name"
+      value=""
+    />
+    <button onclick="getName()">Submit</button>
+    <h1 id="show"></h1>
+  </body>
+</html>
+
+<script>
+  function getName() {
+    let name = document.getElementById("name").value;
+    document.getElementById("show").innerText = name;
+  }
+</script>

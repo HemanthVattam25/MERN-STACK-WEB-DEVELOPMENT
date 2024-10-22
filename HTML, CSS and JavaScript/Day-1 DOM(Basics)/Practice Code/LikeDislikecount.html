@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Like and Dislike</title>
+  </head>
+  <body>
+    <h1 id="count">Count</h1>
+    <button onclick="getLike()">Like</button>
+    <button onclick="getDislike()">Dislike</button>
+  </body>
+</html>
+
+<script>
+  let likes = 0;
+  function getLike() {
+    likes++;
+    document.getElementById("count").innerText = likes;
+  }
+
+  function getDislike() {
+    dislikes--;
+    document.getElementById("count").innerText = dislikes;
+  }
+</script>
