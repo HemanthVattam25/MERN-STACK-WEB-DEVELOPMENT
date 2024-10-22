@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Calculator</title>
+  </head>
+  <body>
+    <input
+      type="number"
+      name="number1"
+      id="number1"
+      placeholder="Enter 1st Number"
+      value=""
+    />
+    <input
+      type="number"
+      name="number2"
+      id="number2"
+      placeholder="Enter 2nd Number"
+      value=""
+    />
+
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+  </body>
+</html>
+
+<script>
+  function add() {
+    let sum =
+      parseInt(document.getElementById("number1").value) +
+      parseInt(document.getElementById("number2").value);
+    alert(sum);
+  }
+
+  function subtract() {
+    let diff =
+      parseInt(document.getElementById("number1").value) -
+      parseInt(document.getElementById("number2").value);
+    alert(diff);
+  }
+
+  function multiply() {
+    let product =
+      parseInt(document.getElementById("number1").value) *
+      parseInt(document.getElementById("number2").value);
+    alert(product);
+  }
+
+  function divide() {
+    let quotient =
+      parseInt(document.getElementById("number1").value) /
+      parseInt(document.getElementById("number2").value);
+    alert(quotient);
+  }
+</script>
