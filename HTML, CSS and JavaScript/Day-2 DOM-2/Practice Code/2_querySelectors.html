@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Query Selectors</title>
+  </head>
+  <body>
+    <div>
+      <h1>Head1</h1>
+      <p class="para">Para1</p>
+      <p class="para">Para2</p>
+      <h1>Head2</h1>
+      <p id="intro">Intro</p>
+    </div>
+  </body>
+</html>
+
+<script>
+  let intro = document.querySelector("#intro");
+  console.log(intro);
+  intro.style.backgroundColor = "green";
+
+  let head1 = document.querySelector("h1");
+  console.log(head1);
+  head1.style.backgroundColor = "yellow";
+
+  //   let para1 = document.querySelector(".para");
+  //   console.log(para1);
+  //   para1.style.backgroundColor = "pink";
+
+  let para = document.querySelectorAll(".para");
+  console.log(para);
+  for (i = 0; i < para.length; i++) {
+    para[i].style.backgroundColor = "teal";
+  }
+</script>

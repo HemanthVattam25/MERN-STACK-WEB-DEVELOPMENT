@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-1</title>
+    <style>
+      .container {
+        display: flex;
+        background-color: aquamarine;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .container > div {
+        background-color: teal;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let boxes = document.querySelectorAll(" .container > div");
+  console.log(boxes);
+  boxes.forEach(function (element) {
+    element.addEventListener("click", getBoxInfo);
+  });
+
+  function getBoxInfo() {
+    console.log(event.target.innerText);
+    event.target.style.color = "red";
+  }
+</script>

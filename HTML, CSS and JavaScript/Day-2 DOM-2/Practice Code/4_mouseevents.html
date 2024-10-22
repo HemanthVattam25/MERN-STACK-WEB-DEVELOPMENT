@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>This is div</div>
+  </body>
+</html>
+
+<script>
+  let divSelect = document.querySelector("div");
+  //   Mouse Enter event
+  divSelect.addEventListener("mouseenter", hoverEvent);
+
+  function hoverEvent() {
+    divSelect.style.backgroundColor = "green";
+    // event.target.style.backgroundColor = "green";
+  }
+  // Mouse Leave Event
+  divSelect.addEventListener("mouseleave", leaveEvent);
+
+  function leaveEvent() {
+    divSelect.style.backgroundColor = "blue";
+  }
+
+  //double click event
+  divSelect.addEventListener("dblclick", () => {
+    divSelect.style.color = "white";
+  });
+</script>

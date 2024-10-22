@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Targeting Class Name</title>
+  </head>
+  <body>
+    <div>
+      <p class="para">p1</p>
+      <p class="para">p2</p>
+      <p class="para">p3</p>
+      <p class="para">p4</p>
+    </div>
+  </body>
+</html>
+
+<script>
+  let classCollection = document.getElementsByClassName("para");
+  console.log(classCollection);
+  for (i = 0; i < classCollection.length; i++) {
+    console.log(classCollection[i]);
+  }
+
+  let container = document.getElementsByTagName("div");
+  console.log(container);
+  container[0].style.backgroundColor = "aliceblue";
+</script>
