@@ -1,0 +1,69 @@
+<!-- Alerting the selected text based on input -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-3</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Enter Name"
+      value=""
+    />
+    <br />
+    <label for="gender">Select Gender:</label>
+    <select name="gender" id="gender">
+      <option value="Select your Gender">Select your Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Others">Others</option>
+    </select>
+    <br />
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Enter your e-mail"
+      value=""
+    />
+    <br />
+    <input
+      type="tel"
+      name="phoneNumber"
+      id="phNo"
+      maxlength="10"
+      placeholder="Enter your Mobile Number"
+      value=""
+    />
+
+    <br />
+
+    <button onclick="alertName()">Your Name</button>
+    <button onclick="alertGender()">Your Gender</button>
+    <button onclick="alertEmail()">Your Email</button>
+    <button onclick="alertMobile()">Your Mobile Number</button>
+  </body>
+</html>
+
+<script>
+  function alertName() {
+    let name = document.getElementById("name").value;
+    alert("Your Name is: " + name);
+  }
+  function alertEmail() {
+    let email = document.getElementById("email").value;
+    alert("Your Email is: " + email);
+  }
+  function alertGender() {
+    let gender = document.getElementById("gender").value;
+    alert("Your gender is: " + gender);
+  }
+  function alertMobile() {
+    let Mobile = document.getElementById("phNo").value;
+    alert("Your Mobile is: " + Mobile);
+  }
+</script>

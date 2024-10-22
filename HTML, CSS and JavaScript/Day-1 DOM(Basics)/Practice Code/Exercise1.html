@@ -1,0 +1,38 @@
+<!-- Changing and Updating the texts -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-1</title>
+  </head>
+  <body>
+    <h1 id="firstname">Hello</h1>
+    <div id="lastname">FLM</div>
+    <p id="fullname">Vegeta</p>
+    <hr />
+
+    <button onclick="setFirstName()">FirstName</button>
+    <button onclick="setLastName()">LastName</button>
+    <button onclick="setFullName()">FullName</button>
+    <button onclick="setDefault()">Reset to default</button>
+  </body>
+</html>
+
+<script>
+  function setFirstName() {
+    document.getElementById("firstname").innerText = "Hemanth";
+  }
+  function setLastName() {
+    document.getElementById("lastname").innerText = "Vattam";
+  }
+  function setFullName() {
+    document.getElementById("fullname").innerText = "Hemanth Vattam";
+  }
+  function setDefault() {
+    document.getElementById("firstname").innerText = "Hello";
+    document.getElementById("lastname").innerText = "FLM";
+    document.getElementById("fullname").innerText = "Vegeta";
+  }
+</script>
