@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create ELement using JS</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  let divTag = document.createElement("div");
+  //   divTag.textContent =
+  //     "This div Tag is created using the document.createElement method in JavaScript";
+  divTag.setAttribute("id", "testDiv");
+  divTag.style.backgroundColor = " yellow";
+  for (i = 0; i < 4; i++) {
+    let pTag = document.createElement("p");
+    pTag.style.color = "red";
+    pTag.innerText = "This is p tag under div tag";
+    divTag.append(pTag);
+  }
+
+  document.querySelector("body").append(divTag);
+</script>
