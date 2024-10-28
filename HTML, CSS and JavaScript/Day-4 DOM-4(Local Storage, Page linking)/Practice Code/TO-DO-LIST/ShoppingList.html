@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="./ShoppingList.css" />
+  </head>
+  <body>
+    <div>
+      <form>
+        <label>Item Name</label>
+        <input
+          type="text"
+          name="itemName"
+          id="itemName"
+          placeholder="Enter the Item Name"
+        />
+        <br />
+        <label>Quantity</label>
+        <input
+          type="number"
+          name="quantity"
+          id="quantity"
+          placeholder="Enter Quantity"
+        />
+        <br />
+        <label>Select Price</label>
+        <select id="price">
+          <option value="below 500">below 500</option>
+          <option value="500-1000">500-1000</option>
+          <option value="1000-2000">1000-2000</option>
+          <option value="Above 2000">Above 2000</option>
+        </select>
+        <br />
+        <input type="submit" />
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Price Range</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- This data gets from javascript -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<script src="./ShoppingList.js"></script>
