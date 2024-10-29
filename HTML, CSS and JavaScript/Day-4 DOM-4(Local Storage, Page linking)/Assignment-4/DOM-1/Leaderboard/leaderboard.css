@@ -1,0 +1,103 @@
+body {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#type {
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.value {
+  width: 50px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.red-box {
+  background-color: red;
+}
+.green-box {
+  background-color: chartreuse;
+}
+
+label {
+  margin: 0px;
+}
+
+.label-score {
+  display: flex;
+  margin: 0px;
+  justify-content: center;
+  position: relative;
+  right: 20px;
+}
+
+.game {
+  width: 80%;
+}
+#score {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0px;
+  cursor: pointer;
+}
+
+#keys > div {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+}
+#green {
+  background-color: chartreuse;
+}
+#orange {
+  background-color: orange;
+}
+
+#purple {
+  background-color: darkmagenta;
+  color: white;
+}
+
+#enter {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+#enter:hover {
+  background-color: brown;
+}
