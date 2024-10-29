@@ -13,9 +13,13 @@
 1. Creating form Page (Home Page): Storing the data and using it
 
 - create navbar with links Home, Applications, Bookmarks
-  **HTML**
+
+#### HTML
+
 - create a simple form with inputs to collect data like name, email, role, salary
-  **JS**
+
+#### JS
+
 - add eventListener to the form
 <!-- Store in Object -->
 - store the inputted in an object with the keys and values, where keys are relevant names and values are taken from the form values
@@ -30,3 +34,29 @@
 <!-- Redirect it to Application Page -->
 
 - **window.location.href = "applications.html"**
+
+2. Create an Application page and display the retrieved data there.
+
+#### HTML
+
+- create a Table with name, email, role, salary. leave tbody empty where the data comes from JS file
+
+#### JS
+
+- retrieve the data from local storage: **jobArr = JSON.parse(localStorage.getItem("Joblist"))**
+<!-- Add this data to Table -->
+- By, forEach element in JobArray i.e, object i.e, application details, get details and add it to inner text of tbody
+
+3. Create a Bookmark page and display the selected bookmarks
+
+#### Connection to application.js
+
+- Add event to bookmark text
+- Pass elements i.e, objects to bookmark function to use and store it in array.
+- push that element in a bookmarkArr
+- store that bookmarkArr in local Storage.
+- Add condition that if bookmarkArr is empty otherwise, get existing data from local storage
+
+- \*\*Now we have the selected bookmark applications and stored in Local storage.
+
+Remaining part: collect the data from local storage and display it in bookmarks tab

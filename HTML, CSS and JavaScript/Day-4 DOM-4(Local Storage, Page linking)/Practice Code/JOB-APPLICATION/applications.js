@@ -18,10 +18,9 @@ jobArr.forEach((element) => {
 
   let td5 = document.createElement("td");
   td5.innerText = "Bookmark this";
-
-  //   td5.style.backgroundColor = "lightgray";
-  //   td5.style.color = "green";
-
+  td5.style.color = "teal";
+  td5.style.fontSize = "18px";
+  td5.style.cursor = "pointer";
   //   let rdButton = document.createElement("input");
   //   rdButton.setAttribute("type", "checkbox");
   //   td5.append(rdButton);
@@ -38,7 +37,6 @@ jobArr.forEach((element) => {
   function bookmarkList(element) {
     bookmarkArr.push(element);
     localStorage.setItem("bookmarks", JSON.stringify(bookmarkArr));
+    window.location.href = "bookmark.html";
   }
-
-  //   window.location.href = "bookmark.html";
 });

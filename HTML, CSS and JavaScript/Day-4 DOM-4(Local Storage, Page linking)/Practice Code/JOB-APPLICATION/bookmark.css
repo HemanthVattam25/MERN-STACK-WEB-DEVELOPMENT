@@ -1,0 +1,45 @@
+body {
+  margin: 0px;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+}
+
+table th {
+  background-color: sandybrown;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Styling for navbar links */
+.Navbar {
+  width: 100%;
+  background-color: teal;
+  position: sticky;
+  top: 0px;
+  left: 10px;
+
+  font-size: 30px;
+  padding: 10px;
+}
+#links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

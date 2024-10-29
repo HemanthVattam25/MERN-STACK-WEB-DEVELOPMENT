@@ -1,0 +1,52 @@
+/* Flexbox centering for the entire body */
+body,
+html {
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for navbar links */
+#links {
+  width: 100%;
+  background-color: teal;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+
+  font-size: 30px;
+  padding: 10px;
+}
+#links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Center container for form */
+.form-container {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Form styling */
+form input,
+form select {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form label {
+  font-weight: bold;
+}
