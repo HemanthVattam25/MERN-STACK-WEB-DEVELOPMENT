@@ -57,6 +57,6 @@
 - store that bookmarkArr in local Storage.
 - Add condition that if bookmarkArr is empty otherwise, get existing data from local storage
 
-- \*\*Now we have the selected bookmark applications and stored in Local storage.
+- **Now we have the selected bookmark applications and stored in Local storage.**
 
 Remaining part: collect the data from local storage and display it in bookmarks tab
