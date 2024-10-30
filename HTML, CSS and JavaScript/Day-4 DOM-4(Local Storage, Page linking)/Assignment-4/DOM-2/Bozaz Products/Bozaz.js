@@ -3,17 +3,42 @@ form.addEventListener("submit", submitAction);
 
 let productArr = JSON.parse(localStorage.getItem("products")) || [];
 
+//Initial display of products on page load
+displayProducts(productArr);
+
+function submitAction(event) {
+  event.preventDefault();
+  let productsObj = {
+    productCategory: form["product-category"].value,
+    productTitle: form["product-title"].value,
+    productDescription: form["product-description"].value,
+    productPrice: form["product-price"].value,
+  };
+  console.log(productsObj);
+  productArr.push(productsObj);
+  localStorage.setItem("products", JSON.stringify(productArr));
+
+  console.log(productArr);
+  displayProducts(productArr);
+
+  document.getElementById("filter").disabled = false;
+
+  // Clear form input fields after submission
+  form.reset();
+}
+
 // Function to display all products from local Storage
-function displayProducts() {
+function displayProducts(productsToDisplay) {
   let divTag = document.querySelector(".cards");
   divTag.innerHTML = ""; // Clear the container to avoid duplicates
-  console.log(productArr);
-  productArr.forEach((element, index) => {
+  //   console.log(productArr);
+  productsToDisplay.forEach((element, index) => {
     let cards = document.createElement("div");
     let h2 = document.createElement("h2");
     let title = document.createElement("p");
     let description = document.createElement("p");
     let price = document.createElement("p");
+
     h2.innerText = element.productCategory;
     title.innerText = element.productTitle;
     description.innerText = element.productDescription;
@@ -40,27 +65,21 @@ function deleteCard(index) {
   localStorage.setItem("products", JSON.stringify(productArr));
 
   // Refresh the display
-  displayProducts();
+  displayProducts(productArr);
 }
 
-// //Initial display of products on page load
-// displayProducts();
+//filter function
+let filterList = document.querySelector("#filter");
+filterList.addEventListener("change", (event) => {
+  const selectedCategory = event.target.value;
 
-function submitAction(event) {
-  event.preventDefault();
-  let productsObj = {
-    productCategory: form["product-category"].value,
-    productTitle: form["product-title"].value,
-    productDescription: form["product-description"].value,
-    productPrice: form["product-price"].value,
-  };
-  console.log(productsObj);
-  productArr.push(productsObj);
-  localStorage.setItem("products", JSON.stringify(productArr));
+  // filter products on selection
 
-  console.log(productArr);
-  displayProducts();
-
-  // Clear form input fields after submission
-  form.reset();
-}
+  const filteredProducts =
+    selectedCategory === "choose"
+      ? productArr
+      : productArr.filter(
+          (product) => product.productCategory === selectedCategory
+        );
+  displayProducts(filteredProducts);
+});

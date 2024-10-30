@@ -8,49 +8,60 @@
   </head>
   <body>
     <h1>Bozaz Products</h1>
-    <form id="form">
-      <label> Select Product Category</label>
-      <br />
-      <select name="product-category" id="product-category">
-        <option value="select">---select---</option>
+    <div class="div-1">
+      <form id="form">
+        <label> Select Product Category</label>
+        <br />
+        <select name="product-category" id="product-category">
+          <option value="select">---select---</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Home appliances">Home appliances</option>
+          <option value="Books">Books</option>
+        </select>
+        <br />
+        <label>Product Title</label>
+        <br />
+        <input
+          type="text"
+          name="product-title"
+          id="product-title"
+          placeholder="Enter the product title"
+          required
+        />
+        <br />
+        <label>Product description</label>
+        <br />
+        <input
+          type="text"
+          name="product-description"
+          id="product-description"
+          placeholder="write the product description"
+          required
+        />
+        <br />
+        <label>Product Price</label>
+        <br />
+        <input
+          type="number"
+          name="product-price"
+          id="product-price"
+          placeholder="Enter product price"
+          required
+        />
+        <br />
+        <input type="submit" />
+      </form>
+
+      <label for="filter">Filter by Category</label>
+      <select name="filter" id="filter" disabled>
+        <option value="choose">--choose category--</option>
         <option value="Electronics">Electronics</option>
         <option value="Furniture">Furniture</option>
         <option value="Home appliances">Home appliances</option>
         <option value="Books">Books</option>
       </select>
-      <br />
-      <label>Product Title</label>
-      <br />
-      <input
-        type="text"
-        name="product-title"
-        id="product-title"
-        placeholder="Enter the product title"
-        required
-      />
-      <br />
-      <label>Product description</label>
-      <br />
-      <input
-        type="text"
-        name="product-description"
-        id="product-description"
-        placeholder="write the product description"
-        required
-      />
-      <br />
-      <label>Product Price</label>
-      <br />
-      <input
-        type="number"
-        name="product-price"
-        id="product-price"
-        placeholder="Enter product price"
-        required
-      />
-      <br />
-      <input type="submit" />
-    </form>
+    </div>
 
     <div class="cards">
       <!--    Product cards comes here from JS      -->
