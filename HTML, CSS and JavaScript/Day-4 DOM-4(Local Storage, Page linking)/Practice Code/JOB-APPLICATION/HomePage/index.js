@@ -32,5 +32,5 @@ function formSubmit(event) {
   //Showing simple alert message
   alert("Thank you, " + jobObj.personName + ". Your data has been submitted");
   //on submit, it takes to next page that is application
-  window.location.href = "applications.html";
+  window.location.href = "../ApplicationsPage/applications.html";
 }

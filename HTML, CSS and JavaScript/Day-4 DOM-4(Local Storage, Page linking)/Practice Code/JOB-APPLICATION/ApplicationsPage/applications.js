@@ -37,6 +37,6 @@ jobArr.forEach((element) => {
   function bookmarkList(element) {
     bookmarkArr.push(element);
     localStorage.setItem("bookmarks", JSON.stringify(bookmarkArr));
-    window.location.href = "bookmark.html";
+    window.location.href = "../BookmarksPage/bookmark.html";
   }
 });
