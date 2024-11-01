@@ -4,18 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Applications</title>
-  <link rel="stylesheet" href="./applications.css">
+    <link rel="stylesheet" href="./applications.css" />
   </head>
   <body>
     <div class="Navbar">
-    <div id="links">
-      <a href="/Practice Code/JOB-APPLICATION/HomePage/index.html">Home</a>
-      <a href="./applications.html">Applications</a>
-      <a href="/Practice Code/JOB-APPLICATION/BookmarksPage/bookmark.html">Bookmarks</a>
+      <div id="links">
+        <a href="/Practice Code/JOB-APPLICATION/HomePage/index.html">Home</a>
+        <a href="./applications.html">Applications</a>
+        <a href="/Practice Code/JOB-APPLICATION/BookmarksPage/bookmark.html"
+          >Bookmarks</a
+        >
+      </div>
     </div>
-  </div>
     <h1>This page shows the submitted applications</h1>
 
+    <div class="sort">
+      <label for="sortname">Sort by Name: </label>
+      <select name="sortname" id="sortname">
+        <option value="atoz">A to Z</option>
+        <option value="ztoa">Z to A</option>
+      </select>
+
+      <label for="sortsalary">Sort by Salary: </label>
+      <select name="sortsalary" id="sortsalary">
+        <option value="LTH">low to high</option>
+        <option value="HTL">high to low</option>
+      </select>
+
+      <label for="filter">Filter by Role: </label>
+      <select name="filter" id="filter">
+        <option value="full-stack">Full Stack</option>
+        <option value="backend">Backend</option>
+        <option value="frontend">Frontend</option>
+      </select>
+    </div>
+    <br />
     <main>
       <table>
         <thead>
@@ -26,16 +49,12 @@
             <th>Expected Salary</th>
             <th>Add to Bookmark</th>
           </tr>
-          <tbody>
-            
-          </tbody>
         </thead>
+        <tbody></tbody>
       </table>
       <!--   Here the data comes  from JS -->
     </main>
   </body>
 </html>
 
-<script src="./applications.js" >
- 
-  </script>
+<script src="./applications.js"></script>

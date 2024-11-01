@@ -21,9 +21,6 @@ jobArr.forEach((element) => {
   td5.style.color = "teal";
   td5.style.fontSize = "18px";
   td5.style.cursor = "pointer";
-  //   let rdButton = document.createElement("input");
-  //   rdButton.setAttribute("type", "checkbox");
-  //   td5.append(rdButton);
 
   tr.append(td1, td2, td3, td4, td5);
 

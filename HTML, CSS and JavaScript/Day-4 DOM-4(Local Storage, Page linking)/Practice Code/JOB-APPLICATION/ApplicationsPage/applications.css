@@ -21,6 +21,16 @@ h1 {
   text-align: center;
 }
 
+label {
+  font-weight: bold;
+}
+.sort {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
 /* Styling for navbar links */
 .Navbar {
   width: 100%;
