@@ -19,20 +19,20 @@
     <h1>This page shows the submitted applications</h1>
 
     <div class="sort">
-      <label for="sortname">Sort by Name: </label>
-      <select name="sortname" id="sortname">
+      <select name="sortName" id="sortName" onchange="handleNameSort()">
+        <option value="select-role">Sort by Name</option>
         <option value="atoz">A to Z</option>
         <option value="ztoa">Z to A</option>
       </select>
 
-      <label for="sortsalary">Sort by Salary: </label>
-      <select name="sortsalary" id="sortsalary">
+      <select name="sortSalary" id="sortSalary" onchange="handleSalarySort()">
+        <option value="select-role">Sort by Salary</option>
         <option value="LTH">low to high</option>
         <option value="HTL">high to low</option>
       </select>
 
-      <label for="filter">Filter by Role: </label>
-      <select name="filter" id="filter">
+      <select name="filter" id="filter" onchange="handleFilter()">
+        <option value="select-role">Filter Category</option>
         <option value="full-stack">Full Stack</option>
         <option value="backend">Backend</option>
         <option value="frontend">Frontend</option>

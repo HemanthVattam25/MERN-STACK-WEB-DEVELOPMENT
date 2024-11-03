@@ -60,3 +60,11 @@
 - **Now we have the selected bookmark applications and stored in Local storage.**
 
 Remaining part: collect the data from local storage and display it in bookmarks tab
+
+4. Add delete option in the bookmarks
+
+- splice the array based on the selected element and the index
+
+5. Add sorting to salary, name and filter based on Role.
+
+- sort and filter based on the elements name and type
