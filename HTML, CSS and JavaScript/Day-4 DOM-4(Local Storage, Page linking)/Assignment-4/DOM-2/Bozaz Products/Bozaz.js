@@ -42,7 +42,7 @@ function displayProducts(productsToDisplay) {
     h2.innerText = element.productCategory;
     title.innerText = element.productTitle;
     description.innerText = element.productDescription;
-    price.innerText = element.productPrice;
+    price.innerText = element.productPrice + "/-";
 
     // create delete button
     let deleteButton = document.createElement("button");
