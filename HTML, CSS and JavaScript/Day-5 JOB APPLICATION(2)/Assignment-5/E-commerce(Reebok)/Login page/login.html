@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reebok</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="logo"><a href="../Navbar/index.html">Reebok</a></div>
+      <div id="links">
+        <a href="../Mens page/mens.html">Men</a>
+        <a href="../Womens's page/womens.html">Women</a>
+        <a
+          href="../Login page/login.html
+            "
+          >Login</a
+        >
+        <a href="../Signup page/signup.html">Signup</a>
+      </div>
+    </div>
+    <div class="login">
+      <form id="form">
+        <h1>Welcome back, Please Login!</h1>
+        <label for="userEmail">Email </label>
+        <input
+          type="email"
+          name="userEmail"
+          id="userEmail"
+          placeholder="Enter your email id"
+          required
+          pattern=".+@example\.com"
+        />
+        <label for="loginPassword">Password</label>
+        <input
+          type="text"
+          name="loginPassword"
+          id="loginPassword"
+          placeholder="Enter your Password"
+          minlength="8"
+          required
+        />
+        <br />
+        <div class="terms-checkbox">
+          <input type="checkbox" id="terms" />
+          <span>I agree to the Terms and Conditions</span>
+        </div>
+        <input type="submit" name="login" id="login" value="Login" />
+      </form>
+    </div>
+
+    <input type="checkbox" name="check" id="check" />
+  </body>
+</html>
