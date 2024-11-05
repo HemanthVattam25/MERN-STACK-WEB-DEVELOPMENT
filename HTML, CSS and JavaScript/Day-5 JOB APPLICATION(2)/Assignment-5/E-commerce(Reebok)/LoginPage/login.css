@@ -10,6 +10,12 @@
   margin: 0px;
   font-size: 20px;
 }
+
+#links a:nth-child(1),
+a:nth-child(2) {
+  display: none;
+}
+
 #logo {
   margin-left: 10px;
   font-size: 30px;
@@ -27,24 +33,38 @@ a {
   align-items: center;
   height: 400px;
   margin: auto;
-  width: fit-content;
+  width: 400px;
+  margin-top: 100px;
 }
 /* Form styling */
-#form input,
-#form select {
+#form input {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 10px;
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#form input[type="email"],
+input[type="password"] {
+  background-color: ghostwhite;
 }
 #form input[type="checkbox"] {
-  width: 30px;
+  width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
+#form input[type="submit"] {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5cb85c;
+}
+
 #form label {
   font-weight: bold;
+  font-size: 20px;
 }
 
 .terms-checkbox {

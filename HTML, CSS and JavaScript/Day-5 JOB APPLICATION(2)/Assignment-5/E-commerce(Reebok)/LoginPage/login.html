@@ -8,16 +8,16 @@
   </head>
   <body>
     <div class="navbar">
-      <div id="logo"><a href="../Navbar/index.html">Reebok</a></div>
+      <div id="logo">Reebok</div>
       <div id="links">
-        <a href="../Mens page/mens.html">Men</a>
-        <a href="../Womens's page/womens.html">Women</a>
+        <a href="../MensPage/mens.html">Men</a>
+        <a href="../WomensPage/womens.html">Women</a>
         <a
-          href="../Login page/login.html
+          href="../LoginPage/login.html
             "
           >Login</a
         >
-        <a href="../Signup page/signup.html">Signup</a>
+        <a href="../SignupPage/signup.html">Signup</a>
       </div>
     </div>
     <div class="login">
@@ -26,30 +26,32 @@
         <label for="userEmail">Email </label>
         <input
           type="email"
-          name="userEmail"
-          id="userEmail"
+          name="loginEmail"
+          id="loginEmail"
           placeholder="Enter your email id"
           required
-          pattern=".+@example\.com"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          title="Please enter a valid email address (ex: john@gmail.com)."
         />
         <label for="loginPassword">Password</label>
         <input
-          type="text"
+          type="password"
           name="loginPassword"
           id="loginPassword"
           placeholder="Enter your Password"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
           minlength="8"
           required
         />
         <br />
         <div class="terms-checkbox">
-          <input type="checkbox" id="terms" />
+          <input type="checkbox" id="terms" required />
           <span>I agree to the Terms and Conditions</span>
         </div>
-        <input type="submit" name="login" id="login" value="Login" />
+        <input type="submit" name="login" id="login" value="Log in" />
       </form>
     </div>
-
-    <input type="checkbox" name="check" id="check" />
   </body>
 </html>
+
+<script src="./login.js"></script>
