@@ -7,14 +7,6 @@ function signUp(event) {
   let userArr = JSON.parse(localStorage.getItem("userDetails")) || [];
   let givenEmail = document.getElementById("userEmail").value;
 
-  let userObj = {
-    userEmail: document.getElementById("userEmail").value,
-    userPassword: document.getElementById("signupPassword").value,
-  };
-  console.log(userObj);
-  userArr.push(userObj);
-  console.log(userArr);
-
   let userExists = false;
   userArr.forEach((element) => {
     if (givenEmail === element.userEmail) {
@@ -25,8 +17,15 @@ function signUp(event) {
   });
 
   if (!userExists) {
-    alert("You are successfully Signed Up");
+    let userObj = {
+      userEmail: document.getElementById("userEmail").value,
+      userPassword: document.getElementById("signupPassword").value,
+    };
+    console.log(userObj);
+    userArr.push(userObj);
+    console.log(userArr);
     localStorage.setItem("userDetails", JSON.stringify(userArr));
+    alert("You are successfully Signed Up");
     form.reset();
     window.location.href = "../Navbar/index.html";
   }
