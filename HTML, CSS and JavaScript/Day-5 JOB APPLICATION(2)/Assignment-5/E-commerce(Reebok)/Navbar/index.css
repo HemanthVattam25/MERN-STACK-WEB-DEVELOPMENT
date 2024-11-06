@@ -1,3 +1,6 @@
+body {
+  margin: 0px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,6 +12,8 @@
   padding: 10px;
   margin: 0px;
   font-size: 20px;
+  position: sticky;
+  top: 0px;
 }
 #logo {
   margin-left: 10px;
@@ -19,4 +24,8 @@ a {
   text-decoration: none;
   color: white;
   padding-right: 50px;
+}
+
+p {
+  font-size: 30px;
 }
