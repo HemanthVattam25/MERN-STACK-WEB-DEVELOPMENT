@@ -38,3 +38,35 @@ h1 {
 img {
   width: 100%;
 }
+
+.caps .item img {
+  height: 400px;
+}
+
+.topwear .item img {
+  height: 500px;
+}
+
+.bottomwear .item img {
+  object-fit: cover;
+  height: 500px;
+}
+
+.footwear .item img {
+  height: 350px;
+}
+
+.btn-cart {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(38, 63, 63);
+  color: white;
+}
+
+.btn-cart:hover {
+  background-color: darkgrey;
+  color: black;
+}
