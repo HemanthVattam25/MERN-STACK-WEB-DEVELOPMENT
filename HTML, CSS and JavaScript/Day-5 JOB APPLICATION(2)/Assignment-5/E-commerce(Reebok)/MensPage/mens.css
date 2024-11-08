@@ -56,7 +56,8 @@ img {
   height: 350px;
 }
 
-.btn-cart {
+.btn-cart,
+.go-cart {
   font-size: 16px;
   border-radius: 5px;
   padding: 10px;
@@ -64,6 +65,9 @@ img {
   cursor: pointer;
   background-color: rgb(38, 63, 63);
   color: white;
+}
+.go-cart {
+  margin-left: 220px;
 }
 
 .btn-cart:hover {

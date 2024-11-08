@@ -23,3 +23,38 @@ a {
 h1 {
   text-align: center;
 }
+
+#cart-list {
+  border: 5px solid rgb(38, 63, 63);
+  border-radius: 10px;
+  width: 75%;
+  margin-left: 20px;
+}
+
+.cart-items {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  margin-left: 40px;
+  border-radius: 20px;
+}
+
+.cart-items h4 {
+  font-weight: bold;
+  color: brown;
+}
+
+.cat,
+.type,
+.pr {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  align-items: center;
+  gap: 50px;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 5px;
+  box-shadow: rgba(117, 157, 140, 0.2) 0px 7px 29px 0px;
+
+  /* border: 1px solid green; */
+}
