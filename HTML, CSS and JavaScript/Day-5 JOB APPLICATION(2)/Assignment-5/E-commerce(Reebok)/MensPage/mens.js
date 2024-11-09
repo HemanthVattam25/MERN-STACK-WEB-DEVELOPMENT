@@ -25,11 +25,13 @@ function cartEvent() {
   let category = this.parentElement.querySelector(".Category").innerText;
   let itemName = this.parentElement.querySelector(".itemName").innerText;
   let itemPrice = this.parentElement.querySelector(".price").innerText;
+  let itemImg = this.parentElement.querySelector(".pic").src;
 
   let cartObj = {
     productCategory: category,
     productName: itemName,
     productPrice: itemPrice,
+    productImg: itemImg,
   };
 
   console.log(cartObj);

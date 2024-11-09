@@ -1,23 +1,12 @@
 let cartArr = JSON.parse(sessionStorage.getItem("cartList")) || [];
 
-// Function to calculate and display total quantity and total price
-function updateBill() {
-  let totalQuantity = 0;
-  let totalPrice = 0;
-
-  cartArr.forEach((item) => {
-    const itemQuantity = item.quantity || 1;
-    const itemPrice = parseInt(item.productPrice.replace("₹", ""));
-
-    totalQuantity += itemQuantity;
-    totalPrice += itemQuantity * itemPrice;
-  });
-
-  document.querySelector(
-    "#bill"
-  ).innerText = `Total : (${totalQuantity} items)`;
-  document.querySelector("#finalPrice").innerText =
-    "Total Bill: " + "₹" + totalPrice;
+// Function to calculate and display total quantity
+function calculateTotalQuantity() {
+  let totalQuantity = cartArr.reduce(
+    (sum, item) => sum + (item.quantity || 1),
+    0
+  );
+  document.querySelector("#bill").innerText = "Total Items: " + totalQuantity;
 }
 
 // function to delete an item from the cart
@@ -36,13 +25,10 @@ cartArr.forEach((element, index) => {
   cat.setAttribute("class", "cat");
   cat.innerText = "Item Type: ";
 
-  let itemImg = document.createElement("img");
-  itemImg.src = element.productImg;
-  itemImg.setAttribute("class", "itemPic");
   let itemCategory = document.createElement("h4");
   itemCategory.setAttribute("class", "category");
   itemCategory.innerText = element.productCategory;
-  cat.append(itemCategory, itemImg);
+  cat.append(itemCategory);
 
   let type = document.createElement("div");
   type.setAttribute("class", "type");
@@ -90,13 +76,14 @@ cartArr.forEach((element, index) => {
     element.quantity = newCount;
     count.innerText = newCount;
     itemPrice.innerText = "₹" + newCount * basePrice;
-    updateBill(); // Update the total each time quantity changes
+    calculateTotalQuantity(); // Update the total each time quantity changes
   }
 
   // function to decrement quantity and update price
   function decrementQuantity() {
     let currentCount = element.quantity;
     if (currentCount > 1) updateQuantity(currentCount - 1);
+    itemPrice.innerText = "₹" + currentCount * basePrice;
   }
   // function to increment quantity and update price
 
@@ -123,5 +110,5 @@ cartArr.forEach((element, index) => {
   cartItems.append(cat, type, pr);
   document.querySelector("#cart-list").append(cartItems, itemOps);
 
-  updateBill();
+  calculateTotalQuantity();
 });
