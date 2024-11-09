@@ -127,9 +127,34 @@ h1 {
 }
 
 .buy {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  width: fit-content;
+}
+#promo {
+  font-size: 24px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+}
+input {
+  height: 30px;
+  margin: 10px;
+}
+#apply {
+  font-size: 20px;
+}
+label {
+  margin-top: 5px;
+  font-size: 24px;
+  color: darkslategray;
+  font-weight: bold;
+  margin-left: 10px;
+}
+#proceed {
+  display: flex;
+  justify-content: center;
 }
 #buynow {
   background-color: darkslategray;
