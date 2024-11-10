@@ -5,6 +5,12 @@ btnCart.forEach((btn) => {
 
 let cartArr = JSON.parse(sessionStorage.getItem("cartList")) || [];
 
+// Select the dropdown for filtering
+let filterDropdown = document.querySelector("#filterDropdown"); // Adjust the selector as needed
+if (filterDropdown) {
+  filterDropdown.addEventListener("change", handleFilter);
+}
+
 function cartEvent() {
   let allItems = document.querySelectorAll(".item");
 
@@ -20,12 +26,10 @@ function cartEvent() {
     }
   });
 
-  //   goCart.addEventListener;
-
-  let category = this.parentElement.querySelector(".Category").innerText;
-  let itemName = this.parentElement.querySelector(".itemName").innerText;
-  let itemPrice = this.parentElement.querySelector(".price").innerText;
-  let itemImg = this.parentElement.querySelector(".pic").src;
+  let category = this.parentElement.querySelector(".Category")?.innerText || "";
+  let itemName = this.parentElement.querySelector(".itemName")?.innerText || "";
+  let itemPrice = this.parentElement.querySelector(".price")?.innerText || "";
+  let itemImg = this.parentElement.querySelector(".pic")?.src || "";
 
   let cartObj = {
     productCategory: category,
@@ -34,9 +38,21 @@ function cartEvent() {
     productImg: itemImg,
   };
 
-  console.log(cartObj);
   cartArr.push(cartObj);
-  console.log(cartArr);
-
   sessionStorage.setItem("cartList", JSON.stringify(cartArr));
+}
+
+// Filter function
+function handleFilter() {
+  let selectedCategory = filterDropdown.value; // Get selected category
+  let allItems = document.querySelectorAll(".item"); // Get all items
+
+  allItems.forEach((item) => {
+    let itemCategory = item.querySelector(".Category")?.innerText || ""; // Check if the category is present
+    if (selectedCategory === "select" || itemCategory === selectedCategory) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
 }

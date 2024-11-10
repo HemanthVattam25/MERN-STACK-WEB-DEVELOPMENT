@@ -19,3 +19,57 @@ a {
   color: white;
   padding-right: 50px;
 }
+
+.footwear,
+.caps,
+.topwear,
+.bottomwear {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 20px;
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.caps .item img {
+  height: 400px;
+}
+
+.topwear .item img {
+  height: 500px;
+}
+
+.bottomwear .item img {
+  object-fit: cover;
+  height: 500px;
+}
+
+.footwear .item img {
+  height: 350px;
+}
+h1 {
+  text-align: center;
+}
+
+.btn-cart,
+.go-cart {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(38, 63, 63);
+  color: white;
+}
+.go-cart {
+  margin-left: 220px;
+}
+
+.btn-cart:hover {
+  background-color: darkgrey;
+  color: black;
+}
