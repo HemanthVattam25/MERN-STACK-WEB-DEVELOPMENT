@@ -23,4 +23,5 @@ function validatePayment(event) {
     alert("Expiry Date is Incorrect");
     return;
   }
+  window.location.href = "../OTPPage/otp.html";
 }
