@@ -12,7 +12,7 @@
       <div id="links">
         <a href="../MensPage/mens.html">Men</a>
         <a href="../WomensPage/womens.html">Women</a>
-        <a href="./cart.html">Cart <span> 🛒</span></a>
+        <a href="./cart.html" id="cartQty">Cart <span> 🛒</span></a>
         <a href="../LoginPage/login.html">Logout</a>
       </div>
     </div>
@@ -25,14 +25,22 @@
       <div id="cart-value">
         <h1>Cart Value</h1>
         <div id="cart-info">
-          <div id="bill"><!--     Data comes from JS   --></div>
+          <div id="finalbill">       
+           <div id="bill"><!--     Data comes from JS   --></div>
           <div id="finalPrice"><!--     Data comes from JS   --></div>
+         </div>
+          <div id="discount">
+            <!--     Data comes from JS   -->
+          </div>
+        </div>
+        <div id="discount">
+          <!--     Data comes from JS   -->
         </div>
         <div class="buy">
             <label for="promoCode">Apply Promo Code:</label>
             <div id="promo">
-            <input type="text" name="promoCode" id="promoCode" />
-            <button id="apply">Apply</button>
+            <input type="text" name="promoCode" id="promoCode" placeholder="Enter Valid Promo code" />
+            <button id="apply">Apply Promo</button>
             </div>
           <div id="proceed">
           <button id="buynow">Proceed to Buy</button>

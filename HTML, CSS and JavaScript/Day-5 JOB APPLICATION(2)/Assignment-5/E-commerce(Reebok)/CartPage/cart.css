@@ -107,25 +107,32 @@ h1 {
   padding: 20px;
   height: max-content;
 }
-
 #cart-info {
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   border: 5px solid gray;
   box-shadow: rgba(117, 157, 140, 0.2) 0px 7px 29px 0px;
+  margin: 10px;
+  padding: 10px;
+}
+#finalbill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
 }
 
 #bill {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 #finalPrice {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 24px;
 }
 
+#discount {
+  font-size: 26px;
+  font-weight: bold;
+}
 .buy {
   display: grid;
   justify-content: center;
@@ -141,9 +148,14 @@ h1 {
 input {
   height: 30px;
   margin: 10px;
+  padding-left: 20px;
+  font-size: 18px;
 }
 #apply {
-  font-size: 20px;
+  font-size: 16px;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
 }
 label {
   margin-top: 5px;
@@ -155,6 +167,7 @@ label {
 #proceed {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #buynow {
   background-color: darkslategray;
