@@ -5,12 +5,6 @@ btnCart.forEach((btn) => {
 
 let cartArr = JSON.parse(sessionStorage.getItem("cartList")) || [];
 
-// Select the dropdown for filtering
-let filterDropdown = document.querySelector("#filterDropdown"); // Adjust the selector as needed
-if (filterDropdown) {
-  filterDropdown.addEventListener("change", handleFilter);
-}
-
 function cartEvent() {
   let allItems = document.querySelectorAll(".item");
 
@@ -44,15 +38,56 @@ function cartEvent() {
 
 // Filter function
 function handleFilter() {
-  let selectedCategory = filterDropdown.value; // Get selected category
-  let allItems = document.querySelectorAll(".item"); // Get all items
+  let selectedValue = document.querySelector("#filter").value;
+  let categories = ["caps", "topwear", "bottomwear", "footwear"];
+  let h2Name = document.querySelectorAll(".products h2");
 
-  allItems.forEach((item) => {
-    let itemCategory = item.querySelector(".Category")?.innerText || ""; // Check if the category is present
-    if (selectedCategory === "select" || itemCategory === selectedCategory) {
-      item.style.display = "block";
-    } else {
-      item.style.display = "none";
+  categories.forEach((category, index) => {
+    const section = document.querySelector(`.${category}`);
+    section.style.display = "grid";
+    h2Name[index].innerText = category.toUpperCase();
+  });
+
+  categories.forEach((category, index) => {
+    const section = document.querySelector(`.${category}`);
+    if (selectedValue !== category) {
+      section.style.display = "none";
+      h2Name[index].innerText = "";
+      return;
     }
   });
+}
+
+// Sorting function
+
+function handlePriceSort() {
+  let sortedValue = document.querySelector("#sortPrice").value;
+  let h2 = document.querySelectorAll("h2");
+  // emptying category name
+  if (sortedValue === "LTH" || "HTL") {
+    h2.forEach((element) => {
+      element.innerText = "";
+    });
+  }
+
+  //converting Node list of h4 items into array
+  let items = Array.from(document.querySelectorAll(".item"));
+
+  // sort items based on their price in h4 tag
+  items.sort((a, b) => {
+    let priceA = parseFloat(a.querySelector("h4").innerText.replace("₹", ""));
+    let priceB = parseFloat(b.querySelector("h4").innerText.replace("₹", ""));
+    if (sortedValue === "LTH") return priceA - priceB;
+    if (sortedValue === "HTL") return priceB - priceA; // Ascending order
+  });
+
+  let container = document.querySelector(".products");
+
+  container.innerHTML = "";
+  items.forEach((item) => {
+    container.appendChild(item);
+  });
+  container.style.display = "grid";
+  container.style.gridTemplateColumns = "repeat(4, 1fr)";
+  container.style.gap = "20px";
 }
