@@ -64,7 +64,7 @@ function handlePriceSort() {
   let sortedValue = document.querySelector("#sortPrice").value;
   let h2 = document.querySelectorAll("h2");
   // emptying category name
-  if (sortedValue === "LTH" || "HTL") {
+  if (sortedValue === "LTH" || sortedValue === "HTL") {
     h2.forEach((element) => {
       element.innerText = "";
     });
@@ -87,6 +87,58 @@ function handlePriceSort() {
   items.forEach((item) => {
     container.appendChild(item);
   });
+  container.style.display = "grid";
+  container.style.gridTemplateColumns = "repeat(4, 1fr)";
+  container.style.gap = "20px";
+}
+function handleNameSort() {
+  let sortedValue = document.querySelector("#sortName").value;
+  let h2 = document.querySelectorAll("h2");
+
+  // Emptying category name if sorting is applied
+  if (sortedValue === "asc" || sortedValue === "dsc") {
+    h2.forEach((element) => {
+      element.innerText = ""; // Clear category names
+    });
+  }
+
+  // Converting Node list of .item elements into an array
+  let items = Array.from(document.querySelectorAll(".item"));
+
+  // Sorting items by name in ascending order
+  if (sortedValue === "asc") {
+    items.sort((a, b) => {
+      const nameA = a.querySelector(".Category").innerText.toUpperCase();
+      const nameB = b.querySelector(".Category").innerText.toUpperCase();
+
+      if (nameA < nameB) return -1;
+      if (nameA > nameB) return 1;
+      return 0; // If equal
+    });
+  }
+
+  // Sorting items by name in descending order
+  if (sortedValue === "dsc") {
+    items.sort((a, b) => {
+      const nameA = a.querySelector(".Category").innerText.toUpperCase();
+      const nameB = b.querySelector(".Category").innerText.toUpperCase();
+
+      if (nameA > nameB) return -1; // Descending order
+      if (nameA < nameB) return 1; // Descending order
+      return 0; // If equal
+    });
+  }
+
+  // Get the container where items are displayed
+  let container = document.querySelector(".products");
+
+  // Clear the existing items and append sorted items
+  container.innerHTML = "";
+  items.forEach((item) => {
+    container.appendChild(item);
+  });
+
+  // Apply grid layout for the container
   container.style.display = "grid";
   container.style.gridTemplateColumns = "repeat(4, 1fr)";
   container.style.gap = "20px";
