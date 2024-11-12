@@ -1,5 +1,5 @@
-![alt text](<game(op).png>)
+![alt text](<media/game(op).png>)
 
-![alt text](<max(op).png>)
+![alt text](<media/max(op).png>)
 
-![alt text](<equal(op).png>)
+![alt text](<media/equal(op).png>)
