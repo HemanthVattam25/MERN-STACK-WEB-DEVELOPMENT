@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SetInterval</title>
+  </head>
+  <body>
+    <h1>Timer Starts when start button is clicked</h1>
+    <button onclick="startTimer()">Start Timer</button>
+    <button onclick="stopTimer()">Stop Timer</button>
+  </body>
+</html>
+
+<script>
+  let i = 0;
+  let id;
+  function startTimer() {
+    i = 0;
+    id = setInterval(function () {
+      i++;
+      document.querySelector("h1").innerText = i;
+    }, 1000);
+  }
+
+  function stopTimer() {
+    clearInterval(id);
+    document.querySelector("h1").innerHTML = "Timer Stopped";
+  }
+</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <style>
+      img {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="start()">Start Slideshow</button>
+    <button onclick="stop()">Stop Slideshow</button>
+    <div id="slider"></div>
+  </body>
+</html>
+
+<script>
+  let images = [
+    "https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg",
+    "https://fps.cdnpk.net/images/home/subhome-ai.webp?w=649&h=6490",
+    "https://i0.wp.com/picjumbo.com/wp-content/uploads/amazing-stone-path-in-forest-free-image.jpg?w=600&quality=80",
+    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
+  ];
+
+  let i = 0;
+  let id;
+  function start() {
+    document.querySelector("#slider").innerHTML = "";
+    let img = document.createElement("img");
+    id = setInterval(function () {
+      if (i == images.length) {
+        i = 0;
+      }
+      img.src = images[i++];
+      document.querySelector("#slider").append(img);
+    }, 2000);
+  }
+  function stop() {
+    clearInterval(id);
+  }
+</script>
