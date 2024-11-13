@@ -9,7 +9,7 @@ The problem with the Asynchronous code is, Whenever we use Asynchronous code, an
 There are some issues with the asynchronous code.
 
 1. **Callback Hell**:
-   When we use asynchronous code, if we use nested functions inside the first argument of asynchronous method/ Web APIs i.e, setTimeout, setTimeInterval etc... If any issue or error persists, It is very hard to figure out what is happened and which part is the issue. This creates callback hell due to multiple nested functions. It misses clarity.
+   When we use asynchronous code, if we use nested functions inside the first argument of asynchronous method/ Web APIs i.e, setTimeout, setInterval etc... If any issue or error persists, It is very hard to figure out what is happened and which part is the issue. This creates callback hell due to multiple nested functions. It misses clarity.
 
 2. **Code State**
    What is the state of the code, is it running or not? is it throwing error or not? Will it run or not?
@@ -52,7 +52,7 @@ we use two methods that we chain to promise object to handle the state of the as
 ## Event loop:
 
 - **Stack**: stores the Javascript code ( variables, functions etc..)
-- **Queue** : Stores the Asynchronous code (setTimeout, SetTimeInterval etc..)
+- **Queue** : Stores the Asynchronous code (setTimeout, SetInterval etc..)
 - **Micro task queue**: stores the promises code ( resolve and reject)
 
 - Order of execution: Stack > MicroTask Queue > Queue

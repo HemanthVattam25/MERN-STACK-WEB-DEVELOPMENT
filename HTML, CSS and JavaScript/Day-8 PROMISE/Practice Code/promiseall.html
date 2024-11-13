@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  let promise1 = new Promise((resolve, reject) => {
+    resolve("task 1 is success");
+  });
+
+  let promise2 = new Promise((resolve, reject) => {
+    reject("task 2 is failed");
+    // resolve("task 2 is success");
+  });
+
+  let promiseArr = [promise1, promise2];
+  Promise.all(promiseArr)
+    .then((success) => {
+      console.log(success);
+    })
+    .catch((failed) => {
+      console.log(failed);
+    });
+</script>
