@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  async function f() {
+    // async says that function always returns a promise.
+    let promiseState = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("processed");
+      }, 3000);
+    });
+
+    let result = await promiseState; // waits until promise state is confirmed
+    alert(result);
+  }
+  f();
+</script>

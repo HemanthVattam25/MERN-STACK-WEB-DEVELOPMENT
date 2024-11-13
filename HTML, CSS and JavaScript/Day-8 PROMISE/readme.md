@@ -75,3 +75,11 @@ ex: Payment by using both cashback/wallet and card
 we store all individual promises in an array and we pass this array to promise all to check its state
 
 `promise.all(promiseArr).then().catch();`
+
+## Async
+
+When Async keyword is added before any function, it means it always returns a promise
+
+## Await
+
+When await keyword is used, it makes code to wait until that promise settles and returns its result
