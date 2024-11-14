@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.options {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: gainsboro;
+}
+#container {
+  margin: 10px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+#container img {
+  height: 200px;
+  width: 400px;
+}
+
+h3 {
+  font-weight: bolder;
+}
+
+h3,
+p {
+  margin-left: 10px;
+}

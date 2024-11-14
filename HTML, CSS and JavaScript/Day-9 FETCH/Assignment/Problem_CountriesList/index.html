@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="options">
+      <select name="sort" id="sort" onchange="sortByPopulation()">
+        <option value="select">Sort by Population</option>
+        <option value="lth">Low to High</option>
+        <option value="htl">High to Low</option>
+      </select>
+
+      <select name="filter" id="filter" onchange="filterByRegion()">
+        <option value="select">Filter by Region</option>
+        <option value="Antarctic">Antarctic</option>
+        <option value="Americas">Americas</option>
+        <option value="Europe">Europe</option>
+        <option value="Africa">Africa</option>
+        <option value="Asia">Asia</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </div>
+    <div id="block"></div>
+  </body>
+</html>
+
+<script src="script.js"></script>
