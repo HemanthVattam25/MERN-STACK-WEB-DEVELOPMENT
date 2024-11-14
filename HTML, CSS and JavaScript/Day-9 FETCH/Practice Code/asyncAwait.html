@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  async function passState() {
+    try {
+      let promiseNew = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("Success");
+        }, 2000);
+      });
+      let result = await promiseNew;
+      alert(result); // any return statement in async will be treated as resolve
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  //   passState().then((data) => {
+  //     alert(data);
+  //   });
+
+  passState();
+</script>

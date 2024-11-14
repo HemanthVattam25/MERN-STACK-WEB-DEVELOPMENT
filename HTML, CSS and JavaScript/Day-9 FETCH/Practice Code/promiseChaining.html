@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  let Promise1 = new Promise((resolve, reject) => {
+    resolve("Resolved");
+  });
+
+  Promise1.then(function (result) {
+    alert(result);
+    let b = " to next";
+    return result + b; // Stores result of the promise1
+  })
+    .then(function (storedResult) {
+      // The result is a new promise now
+      alert(storedResult);
+      return new Promise((resolve, reject) => {
+        reject("Here is the error");
+      });
+
+      // passing one promise result to another promise using .then() is known as promise Chaining
+    })
+    .then((finalResult) => {
+      alert(finalResult);
+    })
+    .catch((error) => {
+      alert(error);
+    });
+</script>

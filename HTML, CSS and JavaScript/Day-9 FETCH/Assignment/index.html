@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <style>
+      body {
+        margin: 0;
+
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      #block {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .options {
+        display: flex;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      select {
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: gainsboro;
+      }
+      #container {
+        margin: 10px;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+        background-color: whitesmoke;
+      }
+      #container img {
+        height: 200px;
+        width: 400px;
+      }
+
+      h3 {
+        font-weight: bolder;
+      }
+
+      h3,
+      p {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="options">
+      <select name="sort" id="sort" onchange="sortByPopulation()">
+        <option value="select">Sort by Population</option>
+        <option value="lth">Low to High</option>
+        <option value="htl">High to Low</option>
+      </select>
+
+      <select name="filter" id="filter" onchange="filterByRegion()">
+        <option value="select">Filter by Region</option>
+        <option value="Antarctic">Antarctic</option>
+        <option value="Americas">Americas</option>
+        <option value="Europe">Europe</option>
+        <option value="Africa">Africa</option>
+        <option value="Asia">Asia</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </div>
+    <div id="block"></div>
+  </body>
+</html>
+
+<script>
+  let countryList;
+  async function countries() {
+    try {
+      let data = await fetch("https://restcountries.com/v3.1/all");
+      countryList = await data.json();
+      displayCountries(countryList);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  function displayCountries(list) {
+    document.querySelector("#block").innerHTML = "";
+
+    list.map((element) => {
+      let container = document.createElement("div");
+      container.setAttribute("id", "container");
+      let countryName = document.createElement("h3");
+      countryName.innerText = element.name.common;
+      let flagImg = document.createElement("img");
+      flagImg.src = element.flags.png;
+      let population = document.createElement("p");
+      population.innerHTML =
+        " <strong> Population: </strong>" + element.population;
+      let region = document.createElement("p");
+      region.innerHTML = "<strong> Region: </strong>" + element.region;
+      let capital = document.createElement("p");
+      capital.innerHTML = "<strong> Capital: </strong>" + element.capital;
+      container.append(flagImg, countryName, population, region, capital);
+      document.querySelector("#block").append(container);
+    });
+  }
+
+  function sortByPopulation() {
+    let selectedValue = document.querySelector("#sort").value;
+    if (selectedValue === "lth") {
+      countryList.sort((a, b) => {
+        return a.population - b.population;
+      });
+    }
+    if (selectedValue == "htl") {
+      countryList.sort((a, b) => {
+        return b.population - a.population;
+      });
+    }
+    displayCountries(countryList);
+  }
+
+  function filterByRegion() {
+    let filteredValue = document.querySelector("#filter").value;
+    let filteredArray = countryList.filter((elem) => {
+      return elem.region === filteredValue;
+    });
+    displayCountries(filteredArray);
+  }
+  countries();
+</script>
