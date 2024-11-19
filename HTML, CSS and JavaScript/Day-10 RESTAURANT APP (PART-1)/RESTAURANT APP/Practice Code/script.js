@@ -30,7 +30,7 @@ function renderMenu(menuItems) {
     menuItem.id = item.id;
     menuItem.draggable = true; // Dragging items
     // store as attributes
-    menuItem.dataset.name = item.name;
+    menuItem.dataset.name = item.name; // converts each data into data-set to access as attributes or pass through functions
     menuItem.dataset.type = item.type;
     menuItem.dataset.price = item.price;
 
@@ -53,11 +53,12 @@ function renderTable(tables) {
     const tableCard = document.createElement("div");
     tableCard.className = "table-card";
     tableCard.id = table.id;
-    //console.log(Object.values(tables))
+    //console.log(Object.values(tables.items))
     tableCard.innerHTML = `
     <h4> ${table.name}</h4>
     <p>Total: ${table.total.toFixed(2)} </p>
     <p>Items: ${Object.values(table.items).reduce(
+      // to give total count of items
       (a, b) => a + b.quantity,
       0
     )} </p>`;
@@ -89,7 +90,7 @@ function dropItem(e) {
   // console.log("dropped");
   e.preventDefault();
   const itemId = e.dataTransfer.getData("text"); // To get Data
-  const itemElement = document.getElementById(itemId);
+  const itemElement = document.getElementById(itemId); //
   const itemName = itemElement.dataset.name;
   const itemPrice = parseFloat(itemElement.dataset.price);
   const tableId = e.target.id;
@@ -104,6 +105,7 @@ function addItemToTable(tableId, itemName, itemPrice) {
   if (!table.items[itemName]) {
     table.items[itemName] = { quantity: 0, price: itemPrice };
   }
+  //console.log(tables);
   table.items[itemName].quantity++;
   table.total += itemPrice;
 
