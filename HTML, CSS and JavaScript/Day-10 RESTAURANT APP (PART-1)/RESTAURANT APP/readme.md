@@ -12,7 +12,7 @@ where Menu has item details like,
 - Item Price
 - Item type
 
-Table has Table details like,
+Table has Table details like:
 
 - Table Number
 - Ordered Items
