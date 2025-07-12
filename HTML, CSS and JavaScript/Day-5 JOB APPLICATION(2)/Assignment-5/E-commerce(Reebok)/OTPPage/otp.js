@@ -12,5 +12,5 @@ function validateOTP(event) {
   } else {
     alert("OTP verified, Payment Successful");
   }
-  window.location.href = "../Navbar/index.html";
+  window.location.href = "/index.html";
 }
